@@ -1,0 +1,9 @@
+.navhead{
+	float: left;
+	margin-left: 37%;
+}
+section{
+	width: inherit;
+	height: 1000px;
+	border: 1px solid #000;
+}

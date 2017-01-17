@@ -1,0 +1,61 @@
+.spritelogo {
+        background: url("/image/thunderlab_logoicon_grayscale.png");
+    }
+.ie {
+        width: 58px; /* Icon width */
+        height: 60px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 60px; /* Icon background position in sprite */
+    }
+.spriteThundericon {
+        background: url("/image/thunder_icon.png");
+    }
+.ie {
+        width: 13px; /* Icon width */
+        height: 25px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 25px; /* Icon background position in sprite */
+    }
+.spriteGoto {
+        background: url("/image/gototop_icon.png");
+    }
+.ie {
+        width: 52px; /* Icon width */
+        height: 52px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 52px; /* Icon background position in sprite */
+    }
+.spriteFacebook {
+        background: url("/image/facebookicon.png");
+    }
+.ie {
+        width: 10px; /* Icon width */
+        height: 21px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 21px; /* Icon background position in sprite */
+    }
+.spriteTwitter {
+        background: url("/image/twitter_icon.png");
+    }
+.ie {
+        width: 10px; /* Icon width */
+        height: 21px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 21px; /* Icon background position in sprite */
+    }
+.button{
+	background-color: #fff;
+	border: 2px solid #424242;
+	color: black;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration:none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.button:hover{
+	color: white;
+	background-color: #000;
+}
