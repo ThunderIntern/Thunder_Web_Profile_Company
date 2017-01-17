@@ -1,15 +1,39 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
+|
+*/
+
 Route::get('/', function () {
-    return view('welcome');
+	    return view('welcome');
 });
-Route::get('/latihan', function () {
-    return view('latihan');
+
+Route::get('/asiqi', function () {
+	    return "laravelku";
 });
-Route::get('/haloworld', 'CommentsController@haloWorld');
-Route::get('/myprofile',function()
-{
-	return view('myprofile');
+
+Route::get('/blog', 'BlogController@index');
+Route::get('/blog/{id}', 'BlogController@show');
+
+Route::get('/project', function () {
+	    return view('asd') ;
 });
-Route::get('/master', 'masterController@index');
-Route::get('/master/{id}', 'masterController@show');
+
+Route::get('/qwerty', function () {
+	    return view('model') ;
+});
+
+Route::get('/erd', function () {
+	    return view('asw') ;
+});
+
+Route::get('/pro', function () {
+	    return view('/layout/project') ;
+});
