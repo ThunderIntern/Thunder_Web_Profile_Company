@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/Thunderlab.css">
 </head>
 </head>
 <body>
@@ -29,28 +30,28 @@
 
 </nav>
 <section>
-<img style="width:inherit;height: 700px" src="image/hero.jpg">
+<img class="image" src="image/hero.jpg">
 </section>
 <section id="/" class="content-section text-center">
-	<div class="row">
+	<div style="margin: 50px" class="row">
 	<h1> TECH SOLUTION ARTISAN </h1>
-	<p style="font-size: 14pt;"><br>In the thunderweb,we crafted thousands line of beautiful codes
+	<p calss="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
 	<br>into valuable system
 	<br>we kept squad focus on their best</p>
 	</div>
-	<div class="row">
-  <div class="col-sm-4"><h1>WEB DESIGN</h1><p style="font-size: 12pt;"><br>Interface Design
+	<div style="margin: 50px;" class="row">
+  <div class="col-sm-4"><h1>WEB DESIGN</h1><p class="menu"><br>Interface Design
   <br>Responsive Design <br>UX Srategy</p></div>
-  <div class="col-sm-4"><h1>WEB DEVELOPMENT</h1><p style="font-size: 12pt;"><br>System Analyst
+  <div class="col-sm-4"><h1>WEB DEVELOPMENT</h1><p class="menu" ="><br>System Analyst
   <br>Bussines Flow & Policy<br>Softwere Architecture</p></div>
-  <div class="col-sm-4"><h1>IMPLIMENTATION</h1><P style="font-size: 12pt";><br>System Performance
+  <div class="col-sm-4"><h1>IMPLIMENTATION</h1><P class="menu"><br>System Performance
   <br>Technical Help<br>QA & User Testing</P></div>
 </div>
 </section>
 <sectionid="/" class="content-section text-center">
-	<div>
+	<div style="margin: 50px">
 		<h1>YOUR TIME TOO PRECIOUS</h1>
-		<p style="font-size: 14pt";><br>We are focusing in helping small business to run like a
+		<p class="tech" ="tech"><br>We are focusing in helping small business to run like a
 		<br>big cooperate,so that they can focus on their growth.We<br>are archieving that by offering
 		tech solution with many<br>service like accounting tech solution,data analysis<br>solution,HR
 		tech solution,costumer relation management,<br>management tech solution, and much more.
