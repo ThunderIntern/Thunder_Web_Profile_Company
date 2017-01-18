@@ -1,7 +1,7 @@
 .spritelogo {
         background: url("/image/thunderlab_logoicon_grayscale.png");
     }
-.ie {
+.ielogo {
         width: 58px; /* Icon width */
         height: 60px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -10,7 +10,7 @@
 .spriteThundericon {
         background: url("/image/thunder_icon.png");
     }
-.ie {
+.ieTicon {
         width: 13px; /* Icon width */
         height: 25px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -19,7 +19,7 @@
 .spriteGoto {
         background: url("/image/gototop_icon.png");
     }
-.ie {
+.ieGoto {
         width: 52px; /* Icon width */
         height: 52px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -28,7 +28,7 @@
 .spriteFacebook {
         background: url("/image/facebookicon.png");
     }
-.ie {
+.iefb {
         width: 10px; /* Icon width */
         height: 21px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -37,7 +37,7 @@
 .spriteTwitter {
         background: url("/image/twitter_icon.png");
     }
-.ie {
+.ieTwi {
         width: 10px; /* Icon width */
         height: 21px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -47,7 +47,7 @@
 	background-color: #fff;
 	border: 2px solid #424242;
 	color: black;
-	padding: 15px 30px;
+	padding: 10px 30px;
 	text-align: center;
 	text-decoration:none;
 	display: inline-block;
@@ -60,13 +60,32 @@
 	background-color: #000;
 }
 .image{
-    width:100%;
-    height: 550px;    
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;    
 }
 .tech{
     font-size: 14pt;
 }
 .menu{
     font-size: 12pt;
-    margin: 0px;
+}
+body{
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+.nav{
+	margin-left: 33%;
+	margin-bottom: 20px;
+	font-size: 16pt;
+}
+.li1{
+	margin-top: 40px;
+}
+.li2{
+	margin-right:30px;
+	margin-left: 30px;
+}
+.li3{
+	margin-top: 40px;
 }
