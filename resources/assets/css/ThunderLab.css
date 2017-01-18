@@ -1,0 +1,110 @@
+.spritelogo {
+        background: url("/image/thunderlab_logoicon_grayscale.png");
+    }
+.ielogo {
+        width: 58px; /* Icon width */
+        height: 60px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 60px; /* Icon background position in sprite */
+    }
+.spriteThundericon {
+        background: url("/image/thunder_icon.png");
+    }
+.ieTicon {
+        width: 13px; /* Icon width */
+        height: 25px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 25px; /* Icon background position in sprite */
+    }
+.spriteGoto {
+        background: url("/image/gototop_icon.png");
+    }
+.ieGoto {
+        width: 52px; /* Icon width */
+        height: 52px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 52px; /* Icon background position in sprite */
+    }
+.spriteFacebook {
+        background: url("/image/facebookicon.png");
+    }
+.iefb {
+        width: 10px; /* Icon width */
+        height: 21px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 21px; /* Icon background position in sprite */
+    }
+.spriteTwitter {
+        background: url("/image/twitter_icon.png");
+    }
+.ieTwi {
+        width: 10px; /* Icon width */
+        height: 21px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 21px; /* Icon background position in sprite */
+    }
+.button{
+	background-color: #fff;
+	border: 2px solid #424242;
+	color: black;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration:none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.button:hover{
+	color: white;
+	background-color: #000;
+}
+.image{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;    
+}
+.tech{
+    font-size: 18pt;
+}
+.menu{
+    font-size: 16pt;
+}
+body{
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+.nav{
+	margin-left: 33%;
+	margin-bottom: 10px;
+	font-size: 16pt;
+}
+.navbar{
+    width: 100%!important;
+}
+.li1{
+	margin-top: 40px;
+}
+.li2{
+	margin-right:30px;
+	margin-left: 30px;
+}
+.li3{
+	margin-top: 40px;
+}
+#isi1{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+#isi2{
+    margin-bottom: 50px;
+}
+#isi3{
+    margin-top:100px
+}
+.footer{
+    width: inherit;
+    height: 300px;
+    border-top: 1px solid #000;
+}

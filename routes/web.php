@@ -11,29 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
 	    return view('welcome');
 });
 
-Route::get('/asiqi', function () {
-	    return "laravelku";
-});
-
-Route::get('/blog', 'BlogController@index');
-Route::get('/blog/{id}', 'BlogController@show');
-
-Route::get('/project', function () {
-	    return view('asd') ;
-});
-
-Route::get('/qwerty', function () {
-	    return view('model') ;
-});
-
-Route::get('/erd', function () {
-	    return view('asw') ;
-});
-
-Route::get('/pro', function () {
+Route::get('/', function () {
 	    return view('/layout/project') ;
 });
