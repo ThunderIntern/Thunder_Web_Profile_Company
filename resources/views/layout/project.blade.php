@@ -56,6 +56,38 @@
 		tech solution with many<br>service like accounting tech solution,data analysis<br>solution,HR
 		tech solution,costumer relation management,<br>management tech solution, and much more.
 	</div>
+  <div class="row">
+  <div class="col-md-4"><h1 >HOTEL</h1><br class="tech" ="">http://hotelriverstone.com/</div>
+  <div class="col-md-8"><img src="image/hotel.jpg"></div>
+</div>
+<div class="row">
+  <div class="col-md-8"><img src="image/edukasi.jpg"></div>
+  <div class="col-md-4"><h1>EDUKASI</h1><br class="tech"="">https://bloom.id/</div>
+</div>
+<div class="row">
+  <div class="col-md-4"><h1>AKUNTANSI</h1></div>
+  <div class="col-md-8"><img src="image/akuntansi.jpg"></div>
+</div>
+<div class="row">
+  <div class="col-md-8"><img src="image/travel.jpg"></div>
+  <div class="col-md-4"><h1>TRAVEL</h1><br class="tech"="">http://www.tamasyahati.com/<br>http:/capcus.id</div>
+</div>
+<div class="row">
+  <div class="col-md-4"><h1>PORTAL</h1><br class="tech"="">http://halomalang.com<br>http://gopego.com/</div>
+  <div class="col-md-8"><img src="image/portal.jpg"></div>
+</div>
+<div class="row">
+  <div class="col-md-8"><img src="image/e-commerce.jpg"></div>
+  <div class="col-md-4"><h1>E-COMMERCE</h1><br>http://balin.id/</div>
+</div>
+<div class="row">
+  <div class="col-md-4"><h1>HR</h1><br class="tech"="">http://www.reliance-insurance.com/</div>
+  <div class="col-md-8"><img src="image/hr.jpg"></div>
+</div>
+<div class="row">
+  <div class="col-md-8"><img src="image/notaris.jpg"></div>
+  <div class="col-md-4"><h1>NOTARIS</h1></div>
+</div>
 </section>
 <footer>
 
