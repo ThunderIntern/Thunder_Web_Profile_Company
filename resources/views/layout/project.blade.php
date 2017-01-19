@@ -93,10 +93,17 @@
 </section>
 <section>
    <div class="row" id="isi1">
-    <div class="text-center"><button class="button">Request A Demo</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button">Propose A Service</button></div></div>
+    <div class="text-center">
+    <button id="modalbtn" class="button" data-toggle="modal" data-target="#modal2">Request A Demo</button>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button">Propose A Service</button></div></div>
 </section>
-<footer>
- 
-</footer>
+<footer style="width:inherit;height: 100px; ">
+<div  style='float: left;margin left: 50px;margin-top: 50px; '>
+  &copy;2017 thunderlab.id
+</div>
+<div style="float: right;margin left: 50px;margin-top: 50px;">
+Stay Update<span class="spriteFacebook iefb"></span> 
+</div>
+</footer> 
 </body>
 </html>
