@@ -1,1 +1,259 @@
-.ieTicon,.ielogo{display:inline-block}.spritelogo{background:url(/image/thunderlab_logoicon_grayscale.png)}.ielogo{width:58px;height:60px;background-position:0 60px}.spriteThundericon{background:url(/image/thunder_icon.png)}.ieTicon{width:13px;height:25px;background-position:0 25px}.spriteGoto{background:url(/image/gototop_icon.png)}.ieGoto{width:52px;height:52px;display:inline-block;background-position:0 52px}.ieTwi,.iefb{width:10px;height:21px;display:inline-block}.spriteFacebook{background:url(/image/facebookicon.png)}.iefb{background-position:0 21px}.spriteTwitter{background:url(/image/twitter_icon.png)}.ieTwi{background-position:0 21px}.button{background-color:#fff;border:2px solid #424242;color:#000;padding:10px 30px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;cursor:pointer;border-radius:30px}.button:hover{color:#fff;background-color:#000}.image{width:100%;height:700px;margin-top:50px}.li1,.li3{margin-top:40px}.tech{font-size:18pt}.menu,.nav{font-size:16pt}body{background-color:#fff;font-family:'Open Sans',sans-serif;width:100%}.nav{margin-left:33%;margin-bottom:10px}.navbar{width:100%!important}.li2{margin-right:30px;margin-left:30px}#isi1{margin-bottom:100px;margin-top:50px}#isi2{margin-bottom:50px}#isi3{margin-top:100px}.footer{width:inherit;height:300px;border-top:1px solid #000}
+.sprite {
+        background: url("/image/sprite.png") no-repeat;
+    }
+.ielogo {
+        width: 54px; /* Icon width */
+        height: 53px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 0px; /* Icon background position in sprite */
+    }
+
+.ieTicon {
+        width: 13px; /* Icon width */
+        height: 25px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: -35px -110px; /* Icon background position in sprite */
+    }
+.ieGoto {
+        float: right;
+        margin-right: 4%;
+        width: 53px; /* Icon width */
+        height: 53px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 -52px; /* Icon background position in sprite */
+    }
+.iefb {
+        margin: 0px 10px;
+        width: 10px; /* Icon width */
+        height: 21px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 -106px; /* Icon background position in sprite */
+    }
+.ieTwi {
+        width: 20px; /* Icon width */
+        height: 18px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: -15px -106px; /* Icon background position in sprite */
+    }
+.button{
+	background-color: #fff;
+	border: 2px solid #424242;
+	color: black;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration:none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+.button:hover{
+	color: white;
+	background-color: #000;
+}
+.content{
+    margin-top: 100px;
+}
+.image{
+    width: 90%;
+    height: 450px;
+    margin-top: 80px;    
+}
+.tech{
+    font-size: 16pt;
+}
+.menu{
+    font-size: 14pt;
+}
+body{
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+.nav{
+    margin-top:-15px;
+	margin-left: 33%;
+	margin-bottom: 5px;
+	font-size: 14pt;
+}
+.navbar{
+    width: 100%!important;
+}
+.li1{
+	margin-top: 30px;
+}
+.li2{
+	margin-right:20px;
+	margin-left: 20px;
+}
+.li3{
+	margin-top: 30px;
+}
+#isi1{
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+#isi2{
+    margin-bottom: 50px;
+}
+#isi3{
+    margin-top:100px
+}
+.footer{
+    width: inherit;
+    height: 80px;
+}
+.footleft{
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px; 
+}
+.footright{
+    float: right;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.row{
+    margin-bottom: 30px;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-style: inset;
+    border-width: 1px;
+}
+.textleft{
+    margin-top: 100px;
+    float: left;
+}
+.textright{
+    margin-top: 100px; 
+    float: right;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 40%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration:0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+/*animation*/
+@-webkit-keyframes animatetop {
+    from{top: -300px; opacity: 0}
+    to {top: 0;opacity: 1}
+}
+@keyframes animatetop {
+    from{top: -300px; opacity: 0}
+    to {top: 0;opacity: 1}
+}
+.modal-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 2px 16px;
+}
+.modal-body {
+    padding: 2px 16px;
+}
+.modal-footer{
+    padding: 30px 16px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+.btn {
+    margin-top: -15px;
+    float: right;
+}
+input[type=email],select{
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]{
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submitbtn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 14;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.closebtn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 14;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submitbtn:hover{
+    background-color: #ccc;
+    color: #fff;
+}
+.closebtn:hover{
+    background-color: #ccc;
+    color: #fff;    
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#overview{
+    margin: 8px;
+}
+
+/*# sourceMappingURL=all.css.map */

@@ -1,47 +1,39 @@
-.spritelogo {
-        background: url("/image/thunderlab_logoicon_grayscale.png");
+.sprite {
+        background: url("/image/sprite.png") no-repeat;
     }
 .ielogo {
-        width: 58px; /* Icon width */
-        height: 60px; /* Icon height */
+        width: 54px; /* Icon width */
+        height: 53px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 60px; /* Icon background position in sprite */
+        background-position: 0 0px; /* Icon background position in sprite */
     }
-.spriteThundericon {
-        background: url("/image/thunder_icon.png");
-    }
+
 .ieTicon {
         width: 13px; /* Icon width */
         height: 25px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 25px; /* Icon background position in sprite */
-    }
-.spriteGoto {
-        background: url("/image/gototop_icon.png");
+        background-position: -35px -110px; /* Icon background position in sprite */
     }
 .ieGoto {
-        width: 52px; /* Icon width */
-        height: 52px; /* Icon height */
+        float: right;
+        margin-right: 4%;
+        width: 53px; /* Icon width */
+        height: 53px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 52px; /* Icon background position in sprite */
-    }
-.spriteFacebook {
-        background: url("/image/facebookicon.png");
+        background-position: 0 -52px; /* Icon background position in sprite */
     }
 .iefb {
+        margin: 0px 10px;
         width: 10px; /* Icon width */
         height: 21px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 21px; /* Icon background position in sprite */
-    }
-.spriteTwitter {
-        background: url("/image/twitter_icon.png");
+        background-position: 0 -106px; /* Icon background position in sprite */
     }
 .ieTwi {
-        width: 10px; /* Icon width */
-        height: 21px; /* Icon height */
+        width: 20px; /* Icon width */
+        height: 18px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 21px; /* Icon background position in sprite */
+        background-position: -15px -106px; /* Icon background position in sprite */
     }
 .button{
 	background-color: #fff;
@@ -59,16 +51,19 @@
 	color: white;
 	background-color: #000;
 }
+.content{
+    margin-top: 100px;
+}
 .image{
-    width: 100%;
-    height: 700px;
-    margin-top: 50px;    
+    width: 90%;
+    height: 450px;
+    margin-top: 80px;    
 }
 .tech{
-    font-size: 18pt;
+    font-size: 16pt;
 }
 .menu{
-    font-size: 16pt;
+    font-size: 14pt;
 }
 body{
 	background-color: white;
@@ -76,26 +71,27 @@ body{
     width: 100%;
 }
 .nav{
+    margin-top:-15px;
 	margin-left: 33%;
-	margin-bottom: 10px;
-	font-size: 16pt;
+	margin-bottom: 5px;
+	font-size: 14pt;
 }
 .navbar{
     width: 100%!important;
 }
 .li1{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .li2{
-	margin-right:30px;
-	margin-left: 30px;
+	margin-right:20px;
+	margin-left: 20px;
 }
 .li3{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 #isi1{
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #isi2{
     margin-bottom: 50px;
@@ -105,6 +101,157 @@ body{
 }
 .footer{
     width: inherit;
-    height: 300px;
-    border-top: 1px solid #000;
+    height: 80px;
+}
+.footleft{
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px; 
+}
+.footright{
+    float: right;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.row{
+    margin-bottom: 30px;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-style: inset;
+    border-width: 1px;
+}
+.textleft{
+    margin-top: 100px;
+    float: left;
+}
+.textright{
+    margin-top: 100px; 
+    float: right;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 40%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration:0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+/*animation*/
+@-webkit-keyframes animatetop {
+    from{top: -300px; opacity: 0}
+    to {top: 0;opacity: 1}
+}
+@keyframes animatetop {
+    from{top: -300px; opacity: 0}
+    to {top: 0;opacity: 1}
+}
+.modal-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 2px 16px;
+}
+.modal-body {
+    padding: 2px 16px;
+}
+.modal-footer{
+    padding: 30px 16px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+.btn {
+    margin-top: -15px;
+    float: right;
+}
+input[type=email],select{
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]{
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submitbtn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 14;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.closebtn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 14;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submitbtn:hover{
+    background-color: #ccc;
+    color: #fff;
+}
+.closebtn:hover{
+    background-color: #ccc;
+    color: #fff;    
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#overview{
+    margin: 8px;
 }
