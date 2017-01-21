@@ -18,3 +18,9 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
 	    return view('/layout/project') ;
 });
+Route::post('/sendmail', function (\illuminate\Http\Request $request){
+	// dd($request);
+	Mail::to($request->input('email'))
+		->send(new \App\Mail\MyMail(($request->input('email')),($request->input('bisnis')),($request->input('overview'))));
+	return redirect()->back();
+})->name('sendmail');

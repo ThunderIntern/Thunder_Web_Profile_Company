@@ -16,6 +16,6 @@ require('laravel-elixir-vue-2');
 elixir(function(mix) {
     mix.sass('app.scss')
        .webpack('app.js')
-       .scripts(['modal.js'])
+       .scripts(['myModal.js','Modal1.js','Modal3.js'])
        .styles(['ThunderLab.css']);
 });

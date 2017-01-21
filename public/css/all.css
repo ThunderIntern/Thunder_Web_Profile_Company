@@ -9,6 +9,7 @@
     }
 
 .ieTicon {
+        margin:0 30px;
         width: 13px; /* Icon width */
         height: 25px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -69,6 +70,7 @@ body{
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
     width: 100%;
+    color: #000;
 }
 .nav{
     margin-top:-15px;
@@ -150,11 +152,11 @@ hr {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
     border-radius: 20px;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration:0.4s;
@@ -163,11 +165,11 @@ hr {
 }
 /*animation*/
 @-webkit-keyframes animatetop {
-    from{top: -300px; opacity: 0}
+    from{top: -100px; opacity: 0}
     to {top: 0;opacity: 1}
 }
 @keyframes animatetop {
-    from{top: -300px; opacity: 0}
+    from{top: -100px; opacity: 0}
     to {top: 0;opacity: 1}
 }
 .modal-header {
@@ -193,7 +195,8 @@ input[type=email],select{
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border:none;
+    border-bottom: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -202,7 +205,8 @@ input[type=text]{
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border:none;
+    border-bottom: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -255,5 +259,7 @@ input[type=text]{
 #overview{
     margin: 8px;
 }
-
+#file {
+    margin-left: 30%;
+}
 /*# sourceMappingURL=all.css.map */

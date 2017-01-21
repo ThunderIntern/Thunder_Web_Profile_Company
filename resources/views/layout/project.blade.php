@@ -50,81 +50,66 @@
   <div class="row">
     <div class="text-center">
     <!-- Trigger/Open The Modal -->
-      <button  class="button" data-toggle="modal" data-target="#myModalHorizontal">Join Our Squad</button>
+      <button  id="Btn1" class="button">Join Our Squad</button>
     <!-- The Modal -->
-  <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
-     aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <button type="button" class="close" 
-                   data-dismiss="modal">
-                       <span aria-hidden="true">&times;</span>
-                       <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    Modal title
-                </h4>
-            </div>
-            
-            <!-- Modal Body -->
-            <div class="modal-body">
-                
-                <form class="form-horizontal" role="form">
-                  <div class="form-group">
-                    <label  class="col-sm-2 control-label"
-                              for="inputEmail3">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" 
-                        id="inputEmail3" placeholder="Email"/>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label"
-                          for="inputPassword3" >LinkedIn Profile</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control"
-                            id="inputPassword3" placeholder="Password"/>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <div class="checkbox">
-                        <label>
-                            <input type="checkbox"/> Remember me
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-default">Sign in</button>
-                    </div>
-                  </div>
-                </form> 
-            </div>
-            <!-- Modal Footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default"
-                        data-dismiss="modal">
-                            Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                    Save changes
-                </button>
-            </div>
-        </div>
+    <div id="Modal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Join our squad</h2>
     </div>
+    <div class="modal-body">
+      <div class="divform">
+        <form>
+          <label for="fEmail">Email</label>
+          <input type="email" id="fEmail" name="email" placeholder="mail address">
+          <br>
+          <label for="fbidang">Bidang</label>
+          <select id="fbidang" name="bidang">
+          <optgroup label="Web Designer">
+            <option value="Interface Design">Interface Design</option>
+            <option value="Responsive Design">Responsive Design</option>
+            <option value="UX Strategy">UX Strategy</option>
+          </optgroup>
+          <optgroup label="Web Development">
+            <option value="System Analyst">System Analyst</option>
+            <option value="Business flows & policies">Business flows & policies</option>
+            <option value="Software Architecture">Software Architecture</option>
+          </optgroup>  
+          <optgroup label="Implementation">
+            <option value="System Performance">System Performance</option>
+            <option value="Technical Help"> Techical Help</option>
+            <option value="QA & User Testing">QA & User Testing</option>
+          </optgroup> 
+          </select>
+          <br>
+          <label for="file">Upload</label>
+          <input type="file" name="upload" id="file"/>
+          <label for="letter">Cover Letter</label>
+          <br>
+          <textarea id="letter" name="letter" cols="50" rows="5"></textarea>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="btn">
+        <button class="closebtn" type="button">Close</button>
+        <button class="submitbtn" type="button">Submit</button>
+      </div>
+    </div>
+  </div>
+
 </div>
-       <script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="/js/all.js"></script>
     </div>
   </div>
   </div>
 </section>
 <section class="content-section text-center">
   <div id="isi1">
-    <h1>YOUR TIME TOO PRECIOUS</h1>
+    <h1><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
     <p class="tech" ><br>We are focusing in helping small business to run like a
     <br>big cooperate,so that they can focus on their growth.We<br>are archieving that by offering
     tech solution with many<br>service like accounting tech solution,data analysis<br>solution,HR
@@ -176,12 +161,12 @@
     </div>
     <div class="modal-body">
       <div class="divform">
-        <form>
+        <form action="{{ url('sendmail') }}" method="POST">
           <label for="fEmail">Email</label>
-          <input type="email" id="fEmail" name="email">
+          <input type="email" id="fEmail" name="email" placeholder="mail address">
           <br>
           <label for="fBisnis">Bisnis</label>
-          <select id="fBisnis" name="Bisnis">
+          <select id="fBisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
             <option value="koperasi">Koperasi</option>
@@ -193,13 +178,14 @@
           <label for="overview">Overview</label>
           <br>
           <textarea id="overview" name="overview"></textarea>
-        </form>
       </div>
     </div>
     <div class="modal-footer">
       <div class="btn">
         <button class="closebtn" type="button">Close</button>
-        <button class="submitbtn" type="button">Submit</button>
+        <button class="submitbtn" type="Submit">Submit</button>
+        {{ csrf_field() }}
+          </form>
       </div>
     </div>
   </div>
@@ -213,13 +199,13 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Request our demo</h2>
+      <h2>Propose a service</h2>
     </div>
     <div class="modal-body">
       <div class="divform">
         <form>
           <label for="fEmail">Email</label>
-          <input type="email" id="fEmail" name="email">
+          <input type="email" id="fEmail" name="email" placeholder="mail address">
           <br>
           <label for="fBisnis">Bisnis</label>
           <select id="fBisnis" name="Bisnis">
@@ -233,8 +219,8 @@
           <br>
           <label for="overview">Overview</label>
           <br>
-          <textarea id="overview" name="overview"></textarea>
-        </form>
+          <textarea id="overview" name="overview" cols="45" rows="5"></textarea>
+        
       </div>
     </div>
     <div class="modal-footer">
@@ -242,6 +228,7 @@
         <button class="closebtn" type="button">Close</button>
         <button class="submitbtn" type="button">Submit</button>
       </div>
+      </form>
     </div>
   </div>
 
