@@ -1,24 +1,22 @@
  // Get the modal
 var modal = document.getElementById('myModal');
-
+var nav= document.getElementById('navbar');
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[1];
 var close = document.getElementsByClassName("closebtn")[1];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
+    navbar.style.display="none";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
 close.onclick= function(){
 	modal.style.display="none";
+    navbar.style.display="block";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -30,54 +28,44 @@ window.onclick = function(event) {
 
  // Get the modal
 var modal1 = document.getElementById('Modal1');
+var nav= document.getElementById('navbar');
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("Btn1");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 var close = document.getElementsByClassName("closebtn")[0];
 
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
     modal1.style.display = "block";
+    navbar.style.display="none";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal1.style.display = "none";
-}
 close.onclick = function() {
     modal1.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal1) {
-        modal1.style.display = "none";
-    }
+    navbar.style.display = "block";
 }
  // Get the modal
 var modal3 = document.getElementById('Modal3');
-
+var nav= document.getElementById('navbar');
 // Get the button that opens the modal
 var btn3 = document.getElementById("Btn3");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[2];
 var close = document.getElementsByClassName("closebtn")[2];
 
 // When the user clicks on the button, open the modal
 btn3.onclick = function() {
     modal3.style.display = "block";
+    navbar.style.display="none";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal3.style.display = "none";
-}
 close.onclick = function() {
     modal3.style.display = "none";
+    navbar.style.display="block";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -112,4 +100,31 @@ function playclip6() {
 function playclip7() {
               var audio = document.getElementsByTagName("audio")[7];
               audio.play();}
+$(document).ready(function() {
+          var markupStr = $('.summernote').eq(1).summernote('code');
+          });
+          $('#letter').summernote({
+              height: 145,                 // set editor height
+              width:800,
+              minHeight: 100,             // set minimum height of editor
+              maxHeight: 145,             // set maximum height of editor
+              focus: true                  // set focus to editable area after initializing summernote
+          });
+$(document).ready(function() {
+          var markupStr = $('.summernote').eq(1).summernote('code');
+          });
+          $('#Overview1').summernote({
+              height: 200,                 // set editor height
+              minHeight: 200,             // set minimum height of editor
+              maxHeight: 200,             // set maximum height of editor
+              focus: true                  // set focus to editable area after initializing summernote
+          });
+$(document).ready(function() {
+          });
+          $('#Overview2').summernote({
+              height: 200,                 // set editor height
+              minHeight: 200,             // set minimum height of editor
+              maxHeight: 200,             // set maximum height of editor
+              focus: true                  // set focus to editable area after initializing summernote
+          });
 //# sourceMappingURL=all.js.map

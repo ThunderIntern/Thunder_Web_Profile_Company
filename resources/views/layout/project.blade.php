@@ -9,10 +9,13 @@
   <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}">
   <script src="{{asset('js/all.js')}}" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
 </head>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top navbar-cp">
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar-cp">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-12">
             <ul class="nav navbar-nav">
@@ -58,17 +61,15 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Join our squad</h2>
+      <h2>Join Our Squad</h2>
     </div>
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('joinmail')}}" method="POST">
-          <label for="fEmail">Email</label>
-          <input type="email" id="fEmail" name="email" placeholder="mail address">
+          <input type="email" id="fEmail" name="email" placeholder="Email">
           <br>
-          <label for="fbidang">Bidang</label>
           <select id="fbidang" name="bidang">
+          <optgroup label="--Bidang--">
           <optgroup label="Web Designer">
             <option value="Interface Design">Interface Design</option>
             <option value="Responsive Design">Responsive Design</option>
@@ -83,15 +84,23 @@
             <option value="System Performance">System Performance</option>
             <option value="Technical Help"> Techical Help</option>
             <option value="QA & User Testing">QA & User Testing</option>
+          </optgroup>
           </optgroup> 
           </select>
           <br>
+          <div id="divupload">
           <label for="file">Upload</label>
           <input type="file" name="upload" id="file"/>
+          </div>
+          <div class="setsummer">
           <label for="letter">Cover Letter</label>
           <br>
-          <textarea id="letter" name="letter" cols="50" rows="5"></textarea>
-
+          <textarea id="letter"  name="letter"></textarea>
+          </div>
+          
+          <script>
+          
+          </script>
       </div>
     </div>
     <div class="modal-footer">
@@ -119,7 +128,7 @@
     tech solution,costumer relation management,<br>management tech solution, and much more.
   </div>
   <div class="row">
-      <div class="col-md-4"><span class="textright"><h1 >HOTEL</h1><a class="text-right" href="http://hotelriverstone.com/">http://hotelriverstone.com/</a></span></div>
+      <div class="col-md-4"><span class="textright"><h1 >HOTEL</h1><a id="link" href="http://hotelriverstone.com/">http://hotelriverstone.com/</a></span></div>
       <div class="col-md-8"><img id="doremi" onmouseover="playclip();" src="image/hotel.jpg">
       <audio class="audio" src="/audio/sound_doremi/do.mp3"></audio>
        <script>
@@ -131,7 +140,7 @@
       <audio class="audio" src="/audio/sound_doremi/re.mp3"></audio>
        <script>
         </script></div>
-      <div class="col-md-4"><span class="textleft"><h1 >EDUKASI</h1><a href="https://bloom.id/" >https://bloom.id/</a></span></div>
+      <div class="col-md-4"><span class="textleft"><h1 >EDUKASI</h1><a id="link" href="https://bloom.id/" >https://bloom.id/</a></span></div>
 </div>
 <div class="row">
   <div class="col-md-4"><span class="textright"><h1>AKUNTANSI</h1></span></div>
@@ -147,10 +156,10 @@
    <script>
           
         </script></div>
-  <div class="col-md-4"><span class="textleft"><h1>TRAVEL</h1><a href="http://www.tamasyahati.com/">http://www.tamasyahati.com/</a><br><a href="http:/capcus.id" >http:/capcus.id</a></span></div>
+  <div class="col-md-4"><span class="textleft"><h1>TRAVEL</h1><a id="link" href="http://www.tamasyahati.com/">http://www.tamasyahati.com/</a><br><a id="link" href="http:/capcus.id" >http:/capcus.id</a></span></div>
 </div>
 <div class="row">
-  <div class="col-md-4"><span class="textright"><h1>PORTAL</h1><a href="http://halomalang.com" >http://halomalang.com<br><a href="http://gopego.com" >http://gopego.com/</a></a></div>
+  <div class="col-md-4"><span class="textright"><h1>PORTAL</h1><a class="link"  href="http://halomalang.com" >http://halomalang.com<br><a id="link" href="http://gopego.com" >http://gopego.com/</a></a></div>
   <div class="col-md-8"><img id="doremi" onmouseover="playclip4();" src="image/portal.jpg">
   <audio class="audio" src="/audio/sound_doremi/sol.mp3"></audio>
    <script>
@@ -163,10 +172,10 @@
   <script>
           
         </script></div>
-  <div class="col-md-4"><span class="textleft"><h1>E-COMMERCE</h1><a href="http://balin.id/" >http://balin.id/</a></span></div>
+  <div class="col-md-4"><span class="textleft"><h1>E-COMMERCE</h1><a id="link" href="http://balin.id/" >http://balin.id/</a></span></div>
 </div>
 <div class="row">
-  <div class="col-md-4"><span class="textright"><h1>HR</h1><a href="http://www.reliance-insurance.com/" >http://www.reliance-insurance.com/</a></span></div>
+  <div class="col-md-4"><span class="textright"><h1>HR</h1><a id="link" href="http://www.reliance-insurance.com/" >http://www.reliance-insurance.com/</a></span></div>
   <div class="col-md-8"><img id="doremi" onmouseover="playclip6();" src="image/hr.jpg">
   <audio class="audio" src="/audio/sound_doremi/si.mp3"></audio>
    <script>
@@ -190,16 +199,13 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Request our demo</h2>
+      <h2>Request Our Demo</h2>
     </div>
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('sendmail') }}" method="POST">
-          <label for="fEmail">Email</label>
-          <input type="email" id="fEmail" name="email" placeholder="mail address">
+          <input type="email" id="fEmail" name="email" placeholder="Email">
           <br>
-          <label for="fBisnis">Bisnis</label>
           <select id="fBisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
@@ -209,9 +215,14 @@
             <option value="ecommerce">Ecommerce</option>
           </select>
           <br>
-          <label for="overview">Overview</label>
+          <div class="setsummer">
+          <label for="Overview1">Overview</label>
           <br>
-          <textarea id="overview" name="overview"></textarea>
+          <textarea id="Overview1" name="overview"></textarea></div>
+          
+          <script>
+          
+          </script>
       </div>
     </div>
     <div class="modal-footer">
@@ -232,16 +243,13 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Propose a service</h2>
+      <h2>Propose A Service</h2>
     </div>
     <div class="modal-body">
       <div class="divform">
         <form action="{{url('proposemail')}}" method="POST">
-          <label for="fEmail">Email</label>
-          <input type="email" id="fEmail" name="email" placeholder="mail address">
+          <input type="email" id="fEmail" name="email" placeholder="Email">
           <br>
-          <label for="fBisnis">Bisnis</label>
           <select id="fBisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
@@ -251,9 +259,14 @@
             <option value="ecommerce">Ecommerce</option>
           </select>
           <br>
-          <label for="overview">Overview</label>
+          <div class="setsummer">
+          <label for="Overview2">Overview</label>
           <br>
-          <textarea id="overview" name="overview" cols="45" rows="5"></textarea>
+          <textarea id="Overview2" name="overview"></textarea></div>
+          
+          <script>
+          
+          </script>
       </div>
     </div>
     <div class="modal-footer">
