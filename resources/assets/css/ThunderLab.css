@@ -152,11 +152,12 @@ hr {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 0% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
-    border-radius: 20px;
-    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration:0.4s;
@@ -179,34 +180,35 @@ hr {
     padding: 2px 16px;
 }
 .modal-body {
-    padding: 2px 16px;
+    padding: 10px 30px;
+    margin-bottom: 75px;
 }
 .modal-footer{
-    padding: 30px 16px;
+    padding: 5px 8px;
     background-color: #fff;
     border-top: 1px solid #ccc;
 }
 .btn {
-    margin-top: -15px;
-    float: right;
+    margin-top: 0px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+
 }
 input[type=email],select{
-    width: 80%;
+    width: 30%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border:none;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 input[type=text]{
-    width: 80%;
+    width: 30%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border:none;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -217,11 +219,13 @@ input[type=text]{
     text-align: center;
     text-decoration:none;
     display: inline-block;
-    font-size: 14;
-    padding: 10px 20px;
+    font-size: 16;
+    padding: 15px 30px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-left: 10px;
+    border-radius: 1px;
+    margin-left: 40px;
+    margin-top: 0px;
+    
 }
 .closebtn{
     background-color: #fff;
@@ -230,9 +234,12 @@ input[type=text]{
     text-decoration:none;
     display: inline-block;
     font-size: 14;
-    padding: 10px 20px;
+    padding: 5px 20px;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 0px;
+   
 }
 .submitbtn:hover{
     background-color: #ccc;
@@ -246,7 +253,6 @@ input[type=text]{
 /* The Close Button */
 .close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
 }
@@ -260,5 +266,5 @@ input[type=text]{
     margin: 8px;
 }
 #file {
-    margin-left: 30%;
+    margin-left: 40%;
 }

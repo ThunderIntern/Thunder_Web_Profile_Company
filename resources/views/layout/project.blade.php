@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}">
+   <script src="{{asset('js/all.js')}}"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 </head>
@@ -63,11 +64,9 @@
     <div class="modal-body">
       <div class="divform">
         <form>
-          <label for="fEmail">Email</label>
           <input type="email" id="fEmail" name="email" placeholder="mail address">
           <br>
-          <label for="fbidang">Bidang</label>
-          <select id="fbidang" name="bidang">
+          <select id="fbidang" name="bidang" 
           <optgroup label="Web Designer">
             <option value="Interface Design">Interface Design</option>
             <option value="Responsive Design">Responsive Design</option>
@@ -87,9 +86,24 @@
           <br>
           <label for="file">Upload</label>
           <input type="file" name="upload" id="file"/>
+          <br>
           <label for="letter">Cover Letter</label>
           <br>
-          <textarea id="letter" name="letter" cols="50" rows="5"></textarea>
+          <div id="summernote"></div>
+          <script>
+            $(document).ready(function() {
+            $('#summernote').summernote();
+             });
+            $('#summernote').summernote({
+              height: 20,                 // set editor height
+              minHeight: 5,             // set minimum height of editor
+              maxHeight:20 ,             // set maximum height of editor
+              focus: true,                  // set focus to editable area after initializing summernote
+              width:5,
+              minWidth:-5,
+              maxWidth:5
+        });
+          </script>
         </form>
       </div>
     </div>
