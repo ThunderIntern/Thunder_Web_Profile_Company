@@ -6,6 +6,7 @@
         height: 53px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: 0 0px; /* Icon background position in sprite */
+        cursor: pointer;
     }
 
 .ieTicon {
@@ -22,6 +23,7 @@
         height: 53px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: 0 -52px; /* Icon background position in sprite */
+        cursor: pointer;
     }
 .iefb {
         margin: 0px 10px;
@@ -74,19 +76,15 @@ body{
 }
 .nav{
     margin-top:-15px;
-	margin-left: 33%;
-	margin-bottom: 5px;
+	margin-left: 35%;
 	font-size: 14pt;
 }
-.navbar{
-    width: 100%!important;
-}
+
 .li1{
 	margin-top: 30px;
 }
 .li2{
-	margin-right:20px;
-	margin-left: 20px;
+    margin-top: 10px;
 }
 .li3{
 	margin-top: 30px;
@@ -152,12 +150,11 @@ hr {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: 0% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
-    border-radius: 5px;
-    width: 100%; /* Could be more or less, depending on screen size */
-    height: 100%;
+    border-radius: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration:0.4s;
@@ -180,35 +177,34 @@ hr {
     padding: 2px 16px;
 }
 .modal-body {
-    padding: 10px 30px;
-    margin-bottom: 75px;
+    padding: 2px 16px;
 }
 .modal-footer{
-    padding: 5px 8px;
+    padding: 30px 16px;
     background-color: #fff;
     border-top: 1px solid #ccc;
 }
 .btn {
-    margin-top: 0px;
-  margin-right: 40px;
-  margin-bottom: 15px;
-
+    margin-top: -15px;
+    float: right;
 }
 input[type=email],select{
-    width: 30%;
+    width: 80%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border:none;
+    border-bottom: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 input[type=text]{
-    width: 30%;
+    width: 80%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border:none;
+    border-bottom: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -219,13 +215,11 @@ input[type=text]{
     text-align: center;
     text-decoration:none;
     display: inline-block;
-    font-size: 16;
-    padding: 15px 30px;
+    font-size: 14;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 1px;
-    margin-left: 40px;
-    margin-top: 0px;
-    
+    border-radius: 5px;
+    margin-left: 10px;
 }
 .closebtn{
     background-color: #fff;
@@ -234,12 +228,9 @@ input[type=text]{
     text-decoration:none;
     display: inline-block;
     font-size: 14;
-    padding: 5px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 40px;
-    margin-top: 0px;
-   
 }
 .submitbtn:hover{
     background-color: #ccc;
@@ -253,6 +244,7 @@ input[type=text]{
 /* The Close Button */
 .close {
     color: #aaa;
+    float: right;
     font-size: 28px;
     font-weight: bold;
 }
@@ -266,5 +258,8 @@ input[type=text]{
     margin: 8px;
 }
 #file {
-    margin-left: 40%;
+    margin-left: 30%;
+}
+#doremi:hover{
+    opacity: 0.5;
 }

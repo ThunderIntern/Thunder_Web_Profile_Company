@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}">
-   <script src="{{asset('js/all.js')}}"></script>
+  <script src="{{asset('js/all.js')}}" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 </head>
@@ -16,25 +16,25 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-12">
             <ul class="nav navbar-nav">
-                <li class="li1" ><a href="#">LABORATORY</a></li>
-                <li  class="li2"><a href="#"></a><span class="sprite ielogo"></span></li>
-                <li class="li3"><a href="#">PORTOFOLIO</a></li>
+                <li class="li1" ><a href="#section2">LABORATORY</a></li>
+                <li  class="li2"><a href="#section1"><span class="sprite ielogo"></span></a></li>
+                <li class="li3"><a href="#section3">PORTOFOLIO</a></li>
             </ul>
 
         </div>
     </div>
 
 </nav>
-<section class="content-section text-center">
+<section id="section1" class="content-section text-center">
   <div class="container-fluid">
     <img class="image" src="image/hero.jpg">
   </div>
 </section>
-<section class="content-section text-center">
+<section id="section2" class="content-section text-center">
 	   <div id="isi1" class="row">
       
 	     <h1> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h1>
-	     <p class="tech" ="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
+	     <p class="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
 	     <br>into valuable system
 	     <br>we kept squad focus on their best</p>
 	   </div>
@@ -63,10 +63,12 @@
     </div>
     <div class="modal-body">
       <div class="divform">
-        <form>
+        <form action="{{ url('joinmail')}}" method="POST">
+          <label for="fEmail">Email</label>
           <input type="email" id="fEmail" name="email" placeholder="mail address">
           <br>
-          <select id="fbidang" name="bidang" 
+          <label for="fbidang">Bidang</label>
+          <select id="fbidang" name="bidang">
           <optgroup label="Web Designer">
             <option value="Interface Design">Interface Design</option>
             <option value="Responsive Design">Responsive Design</option>
@@ -86,32 +88,19 @@
           <br>
           <label for="file">Upload</label>
           <input type="file" name="upload" id="file"/>
-          <br>
           <label for="letter">Cover Letter</label>
           <br>
-          <div id="summernote"></div>
-          <script>
-            $(document).ready(function() {
-            $('#summernote').summernote();
-             });
-            $('#summernote').summernote({
-              height: 20,                 // set editor height
-              minHeight: 5,             // set minimum height of editor
-              maxHeight:20 ,             // set maximum height of editor
-              focus: true,                  // set focus to editable area after initializing summernote
-              width:5,
-              minWidth:-5,
-              maxWidth:5
-        });
-          </script>
-        </form>
+          <textarea id="letter" name="letter" cols="50" rows="5"></textarea>
+
       </div>
     </div>
     <div class="modal-footer">
       <div class="btn">
         <button class="closebtn" type="button">Close</button>
-        <button class="submitbtn" type="button">Submit</button>
+        <button class="submitbtn" type="Submit">Submit</button>
+        {{ csrf_field() }}
       </div>
+      </form>
     </div>
   </div>
 
@@ -121,7 +110,7 @@
   </div>
   </div>
 </section>
-<section class="content-section text-center">
+<section id="section3" class="content-section text-center">
   <div id="isi1">
     <h1><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
     <p class="tech" ><br>We are focusing in helping small business to run like a
@@ -131,34 +120,65 @@
   </div>
   <div class="row">
       <div class="col-md-4"><span class="textright"><h1 >HOTEL</h1><a class="text-right" href="http://hotelriverstone.com/">http://hotelriverstone.com/</a></span></div>
-      <div class="col-md-8"><img src="image/hotel.jpg"></div>
+      <div class="col-md-8"><img id="doremi" onmouseover="playclip();" src="image/hotel.jpg">
+      <audio class="audio" src="/audio/sound_doremi/do.mp3"></audio>
+       <script>
+       
+        </script></div>
       </div>
 <div class="row">
-      <div class="col-md-8"><img src="image/edukasi.jpg"></div>
+      <div class="col-md-8"><img id="doremi" onmouseover="playclip1();" src="image/edukasi.jpg">
+      <audio class="audio" src="/audio/sound_doremi/re.mp3"></audio>
+       <script>
+        </script></div>
       <div class="col-md-4"><span class="textleft"><h1 >EDUKASI</h1><a href="https://bloom.id/" >https://bloom.id/</a></span></div>
 </div>
 <div class="row">
   <div class="col-md-4"><span class="textright"><h1>AKUNTANSI</h1></span></div>
-  <div class="col-md-8"><img src="image/akuntansi.jpg"></div>
+  <div class="col-md-8"><img id="doremi" onmouseover="playclip2();" src="image/akuntansi.jpg">
+  <audio class="audio" src="/audio/sound_doremi/mi.mp3"></audio>
+   <script>
+          
+        </script></div>
 </div>
 <div class="row">
-  <div class="col-md-8"><img src="image/travel.jpg"></div>
+  <div class="col-md-8"><img id="doremi" onmouseover="playclip3();" src="image/travel.jpg">
+  <audio class="audio" src="/audio/sound_doremi/fa.mp3"></audio>
+   <script>
+          
+        </script></div>
   <div class="col-md-4"><span class="textleft"><h1>TRAVEL</h1><a href="http://www.tamasyahati.com/">http://www.tamasyahati.com/</a><br><a href="http:/capcus.id" >http:/capcus.id</a></span></div>
 </div>
 <div class="row">
   <div class="col-md-4"><span class="textright"><h1>PORTAL</h1><a href="http://halomalang.com" >http://halomalang.com<br><a href="http://gopego.com" >http://gopego.com/</a></a></div>
-  <div class="col-md-8"><img src="image/portal.jpg"></div>
+  <div class="col-md-8"><img id="doremi" onmouseover="playclip4();" src="image/portal.jpg">
+  <audio class="audio" src="/audio/sound_doremi/sol.mp3"></audio>
+   <script>
+          
+        </script></div>
 </div>
 <div class="row">
-  <div class="col-md-8"><img src="image/e-commerce.jpg"></div>
+  <div class="col-md-8"><img id="doremi" onmouseover="playclip5();" src="image/e-commerce.jpg">
+  <audio class="audio" src="/audio/sound_doremi/la.mp3"></audio>
+  <script>
+          
+        </script></div>
   <div class="col-md-4"><span class="textleft"><h1>E-COMMERCE</h1><a href="http://balin.id/" >http://balin.id/</a></span></div>
 </div>
 <div class="row">
   <div class="col-md-4"><span class="textright"><h1>HR</h1><a href="http://www.reliance-insurance.com/" >http://www.reliance-insurance.com/</a></span></div>
-  <div class="col-md-8"><img src="image/hr.jpg"></div>
+  <div class="col-md-8"><img id="doremi" onmouseover="playclip6();" src="image/hr.jpg">
+  <audio class="audio" src="/audio/sound_doremi/si.mp3"></audio>
+   <script>
+          
+        </script></div>
 </div>
 <div class="row">
-  <div class="col-md-8"><img src="image/notaris.jpg"></div>
+  <div class="col-md-8"><img id="doremi" onmouseover="playclip7();" src="image/notaris.jpg">
+  <audio class="audio" src="/audio/sound_doremi/do(octave).mp3"></audio>
+  <script>
+          
+        </script></div>
   <div class="col-md-4"><span class="textleft"><h1>NOTARIS</h1></span></div>
 </div>
 </section>
@@ -217,12 +237,12 @@
     </div>
     <div class="modal-body">
       <div class="divform">
-        <form>
+        <form action="{{url('proposemail')}}" method="POST">
           <label for="fEmail">Email</label>
           <input type="email" id="fEmail" name="email" placeholder="mail address">
           <br>
           <label for="fBisnis">Bisnis</label>
-          <select id="fBisnis" name="Bisnis">
+          <select id="fBisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
             <option value="koperasi">Koperasi</option>
@@ -234,21 +254,21 @@
           <label for="overview">Overview</label>
           <br>
           <textarea id="overview" name="overview" cols="45" rows="5"></textarea>
-        
       </div>
     </div>
     <div class="modal-footer">
       <div class="btn">
         <button class="closebtn" type="button">Close</button>
-        <button class="submitbtn" type="button">Submit</button>
+        <button class="submitbtn" type="Submit">Submit</button>
+        {{ csrf_field() }}
+        </form>
       </div>
-      </form>
     </div>
   </div>
 
 </div>
 <script src="/js/all.js"></script>
-</div><span class="sprite ieGoto" ><a href="#"></a></span></div>
+</div><a href="#section1"><span class="sprite ieGoto" ></span></a></div>
 </section>
 <footer class="footer">
 <hr>
