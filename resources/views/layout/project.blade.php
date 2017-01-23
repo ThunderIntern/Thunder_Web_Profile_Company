@@ -5,12 +5,13 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="{{asset('css/summernote.css')}}" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}">
   <script src="{{asset('js/all.js')}}" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+  
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
 </head>
 </head>
@@ -42,6 +43,7 @@
 	     <br>we kept squad focus on their best</p>
 	   </div>
 	<section class="content-section text-center">
+
   <div class="container-fluid">
   <div id="isi2" class="row">
       <div class="col-sm-4"><h1>WEB DESIGN</h1><p class="menu"><br>Interface Design
@@ -66,8 +68,10 @@
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('joinmail')}}" method="POST">
+        <label for="email"> Email</label>&nbsp;&nbsp;&nbsp;
           <input type="email" id="fEmail" name="email" placeholder="Email">
           <br>
+          <label for="bidang">Bidang</label>
           <select id="fbidang" name="bidang">
           <optgroup label="--Bidang--">
           <optgroup label="Web Designer">
@@ -88,10 +92,8 @@
           </optgroup> 
           </select>
           <br>
-          <div id="divupload">
           <label for="file">Upload</label>
           <input type="file" name="upload" id="file"/>
-          </div>
           <div class="setsummer">
           <label for="letter">Cover Letter</label>
           <br>
@@ -204,9 +206,11 @@
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('sendmail') }}" method="POST">
-          <input type="email" id="fEmail" name="email" placeholder="Email">
+        <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
           <br>
-          <select id="fBisnis" name="bisnis">
+          <label for="Bisnis">Bisnis</label>
+          <select id="Bisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
             <option value="koperasi">Koperasi</option>
@@ -248,9 +252,11 @@
     <div class="modal-body">
       <div class="divform">
         <form action="{{url('proposemail')}}" method="POST">
-          <input type="email" id="fEmail" name="email" placeholder="Email">
+        <label for="Email">Email</label>
+          <input type="email" id="Email" name="email" placeholder="Email">
           <br>
-          <select id="fBisnis" name="bisnis">
+          <label for="Bisnis">Bisnis</label>
+          <select id="Bisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
             <option value="koperasi">Koperasi</option>

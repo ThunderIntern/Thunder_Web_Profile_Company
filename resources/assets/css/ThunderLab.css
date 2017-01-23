@@ -181,6 +181,7 @@ hr {
 }
 .modal-body {
     padding: 2px 16px;
+    text-align: left;
 }
 .divform{
     margin: 20px;
@@ -199,7 +200,7 @@ input[type=email],select{
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -208,10 +209,12 @@ input[type=text]{
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 20px;
     box-sizing: border-box;
 }
+
+
 
 .submitbtn{
     background-color: #ccc;
@@ -261,11 +264,19 @@ input[type=text]{
 }
 #file {
     margin: 10px;
-    margin-left: 40%;
+    margin-left: 5%;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
 }
 #doremi:hover{
     opacity: 0.5;
 }
 .setsummer{
-    margin: 2% 18%;
+    margin: 2% 5%;
+
+}
+
 }
