@@ -11,7 +11,7 @@
   <script src="{{asset('js/all.js')}}" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-  
+  <link rel="shortcut icon" href="/image/favicon.ico">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
 </head>
 </head>
