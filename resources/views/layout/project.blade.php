@@ -211,11 +211,24 @@
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('sendmail') }}" method="POST">
+              @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+              @endif
         <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="email" id="email" name="email" placeholder="Email" value="{{old('email')}}">
+          @if($errors->has('email'))
+          <p>{{$errors->first('email')}} </p>
+          @endif
           <br>
           <label for="Bisnis">Bisnis</label>
           <select id="Bisnis" name="bisnis">
+            <option value="{{old('bisnis')}}">{{old('bisnis')}}</option>
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
             <option value="koperasi">Koperasi</option>
@@ -227,7 +240,7 @@
           <div class="setsummer">
           <label for="Overview1">Overview</label>
           <br>
-          <textarea id="Overview1" name="overview"></textarea></div>
+          <textarea id="Overview1" name="overview">{{old('overview')}}</textarea></div>
           
           <script>
           
@@ -300,7 +313,7 @@
   &copy;2017 Thunderlab.id
 </div>
 <div class="footright">
-  Stay Update<span class="sprite iefb"></span><span class="sprite ieTwi"></span>
+  Stay Update<span class="sprite iefb"><a href="http://www.facebook.com"></a></span><span class="sprite ieTwi"><a href="http://www.twitter.com"></a></span>
 </div>
 </footer> 
 </body>
