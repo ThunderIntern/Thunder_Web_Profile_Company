@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class BlogController extends Controller
 {
-    public function index()
-    {
-    	return view('blog/home');
+    public function create(){
+         return view('/layout/project');
     }
+    public function store(Request $request){
+      $this->validate($request,[
+            'email' => 'bail|required',
+            'bisnis' => 'required',
+            'overview'=> 'bail|required|max:5',
 
-    public function show($id)
-    {
-    	$nilai = 'ini adalah linknya'. $id;
-    	$users = ['andy','tika','asiki'];
-
-    	return view('blog/single', ['blog' => $nilai,'users' => $users]);
+    ]);
     }
+}
