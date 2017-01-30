@@ -1,7 +1,24 @@
+#span{
+    display: none;
+    margin-top: -10px;
+    margin-left: : 43%;
+    float: left;
+}
+.img-responsive{
+    width: 100%;
+}
 .sprite {
-        background: url("/image/sprite.png") no-repeat;
+   background: url("/image/sprite.png") no-repeat;
     }
+.ieminilogo{
+    width: 46px;
+    height: 53px;
+    display: inline-block;
+    background-position: 0 -125px;
+    cursor: pointer;
+}
 .ielogo {
+        margin-top: 15px;
         width: 54px; /* Icon width */
         height: 53px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
@@ -42,7 +59,7 @@
 	background-color: #fff;
 	border: 2px solid #424242;
 	color: black;
-	padding: 10px 30px;
+	padding: 1% 3%;
 	text-align: center;
 	text-decoration:none;
 	display: inline-block;
@@ -57,28 +74,34 @@
 .content{
     margin-top: 100px;
 }
-.image{
-    width: 90%;
-    height: 450px;
-    margin-top: 80px;    
-}
 .tech{
     font-size: 16pt;
 }
 .menu{
     font-size: 14pt;
 }
-body{
+html,body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
-    width: 100%;
     color: #000;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #fff;
 }
 .nav{
-    margin-top:-15px;
-	margin-left: 35%;
-	font-size: 14pt;
+    margin:-15px 35%;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .li1{
@@ -114,8 +137,13 @@ body{
     margin-right: 60px;
     margin-top: 20px;
 }
+#section1{
+    margin-top: 70px;
+}
 .row{
     margin-bottom: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 hr { 
     display: block;
@@ -144,7 +172,7 @@ hr {
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: auto; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color:#000;
     font-family: 'Open Sans', sans-serif;
@@ -158,7 +186,7 @@ hr {
     padding: 10px;
     border: 1px solid #888;
     width: 100%; /* Could be more or less, depending on screen size */
-    height: auto;
+    height: 100%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration:0.4s;
     animation-name: animatetop;
@@ -196,18 +224,18 @@ hr {
     float: right;
 }
 input[type=email],select{
-    width: 50%;
+    width: 80%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 2px solid #ccc;
+     border: 2px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
     background-color: #eeeeee;
-    margin-left:5%; 
+    margin-left:5%;
 }
 input[type=text]{
-    width: 50%;
+    width: 80%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
@@ -217,9 +245,6 @@ input[type=text]{
     background-color: #eeeeee;
     margin-left: 5%;
 }
-
-
-
 .submitbtn{
     background-color: #ccc;
     border: 1px solid #ccc;
@@ -280,8 +305,95 @@ input[type=text]{
 }
 .setsummer{
     margin: 2% 5%;
-    margin-left: 3%;
-
+    margin-left: 3%
 }
-
+@media only screen and (min-width: 1500px)
+{
+    .nav{
+        margin: -15px 0% -15px 43%;
+    }
+}
+@media only screen and (min-width: 1150px) and (max-width: 1500px)
+{
+    .nav{
+        margin: -15px 0% -15px 36%;
+    }
+}
+@media only screen and (max-width: 1150px) and (min-width: 830px)
+{
+    .nav{
+        margin:-15px 0% -15px 32%;
+    }
+}
+@media only screen and (max-width: 830px) and (min-width: 768px)
+{
+    .nav{
+        margin: -15px 20px -15px 28%;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    nav{
+        padding:0px;
+        padding-bottom: 10px;
+    }
+    .nav{
+        font-weight: normal;
+    }
+    .collapse{
+    margin-top: 50px;
+    }
+    #span{
+        visibility: visible;
+        display: inline;
+        margin-top: -20px;
+        margin-left: 43%;
+    }
+    #isi1{
+        margin-top: 0px;
+    }
+    .tech{
+        font-size: 14pt;
+    }
+    .menu{
+        font-size: 12pt;
+    }
+    .title{
+        font-size: 16pt;
+    }
+    #section1{
+        margin-top: 60px;
+    }
+   .ieTicon {
+        margin:0 10px;
+    }
+}
+@media screen and (max-width: 425px)
+{
+    .button{
+        font-size: 12px;
+    }
+    .nav{
+        font-weight: normal;
+    }
+    #span{
+        margin-left: 38%;
+    }
+    .tech{
+        font-size: 10pt;
+    }
+    .menu{
+        font-size: 10pt;
+    }
+    .title{
+        font-size: 12pt;
+    }
+    .ieTicon {
+        margin:0 10px;
+    }
+    .footer{
+        font-size: 8pt;
+    }
 }
