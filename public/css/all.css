@@ -186,7 +186,7 @@ hr {
     padding: 10px;
     border: 1px solid #888;
     width: 100%; /* Could be more or less, depending on screen size */
-    height: 100%;
+    height: auto;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration:0.4s;
     animation-name: animatetop;
@@ -220,7 +220,6 @@ hr {
     border-top: 1px solid #ccc;
 }
 .btn {
-    margin-top: -15px;
     float: right;
 }
 input[type=email],select{
@@ -304,9 +303,9 @@ input[type=text]{
     opacity: 0.5;
 }
 .setsummer{
-    margin: 2% 5%;
-    margin-left: 3%
+    margin: 5% -7%;
 }
+
 @media only screen and (min-width: 1500px)
 {
     .nav{
@@ -317,6 +316,8 @@ input[type=text]{
 {
     .nav{
         margin: -15px 0% -15px 36%;
+    }
+    
     }
 }
 @media only screen and (max-width: 1150px) and (min-width: 830px)

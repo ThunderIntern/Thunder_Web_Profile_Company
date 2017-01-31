@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
   <link href="{{asset('css/summernote.css')}}" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/all.css')}}">
@@ -13,6 +14,7 @@
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
   <link rel="shortcut icon" href="/image/favicon.ico">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.min.js"></script>
 </head>
 </head>
 <body>
@@ -107,11 +109,20 @@
           <label for="file" style="margin-left: 5%">Upload</label>
           <input type="file" name="upload" id="file"/>
           <div class="setsummer">
-          <label for="letter" style="">Cover Letter</label>
-          <br>
-          <textarea id="letter"  name="letter"></textarea>
+          <div class="row">
+          <div class="container">
+          <div class="col-lg-6">
+
+          <form action="">
+          <div class="form-group">
+          <label>cover letter </label>
+          <textarea name="" id="letter"  rows="5" class="form-control"></textarea>
           </div>
-          
+          </form>
+          </div>
+          </div>
+          </div>
+          </div>
           <script>
           
           </script>
