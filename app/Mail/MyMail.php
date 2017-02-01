@@ -37,4 +37,5 @@ class MyMail extends Mailable
         return $this->from('gopego550@gmail.com')
                     ->view('email.Request');
     }
+    
 }

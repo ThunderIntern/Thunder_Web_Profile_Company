@@ -14,10 +14,11 @@
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
   <link rel="shortcut icon" href="/image/favicon.ico">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.min.js"></script>
 </head>
 </head>
 <body>
+<!--navbar-->
 <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar-cp">
     <div class="container-fluid">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#idnav" aria-expanded="false">
@@ -38,6 +39,7 @@
     </div>
 
 </nav>
+<!--end navbar-->
 <section id="section1" class="content-section">
   <div class="container-fluid col-lg-12">
   <div class="row">
@@ -80,14 +82,23 @@
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('joinmail')}}" method="POST">
+         @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+              @endif
          <label for="email" style="margin-left: 5%"> Email</label>&nbsp;&nbsp;&nbsp;
         <br>
-          <input type="email" id="fEmail" name="email" placeholder="Email">
+          <input type="email" id="fEmail" name="email" placeholder="Email" value="{{old('email')}}">
           <br>
           <label for="bidang" style="margin-left:5%">Bidang</label>
           <br>
           <select id="fbidang" name="bidang">
-          <optgroup label="--Bidang--">
+          <option value="{{old('bidang')}}">{{old('bidang')}}</option>
           <optgroup label="Web Designer">
             <option value="Interface Design">Interface Design</option>
             <option value="Responsive Design">Responsive Design</option>
@@ -103,29 +114,22 @@
             <option value="Technical Help"> Techical Help</option>
             <option value="QA & User Testing">QA & User Testing</option>
           </optgroup>
-          </optgroup> 
+           
           </select>
           <br>
           <label for="file" style="margin-left: 5%">Upload</label>
-          <input type="file" name="upload" id="file"/>
+          <input type="file" name="upload" id="file" value="{{old('upload')}}" />
           <div class="setsummer">
           <div class="row">
           <div class="container">
-          <div class="col-lg-6">
-
-          <form action="">
-          <div class="form-group">
+          <div class="col-lg-12">
           <label>cover letter </label>
-          <textarea name="" id="letter"  rows="5" class="form-control"></textarea>
-          </div>
-          </form>
+          <textarea name="letter" id="letter"  rows="10" class="form-control">{{old('letter')}}</textarea>
           </div>
           </div>
           </div>
           </div>
-          <script>
-          
-          </script>
+          </div>
       </div>
     </div>
     <div class="modal-footer">
@@ -249,19 +253,23 @@
           </select>
           <br>
           <div class="setsummer">
+          <div class="row">
+          <div class="container">
+          <div class="col-lg-12">
           <label for="Overview1">Overview</label>
           <br>
-          <textarea id="Overview1" name="overview">{{old('overview')}}</textarea></div>
+          <textarea id="Overview1" name="overview"></textarea></div>
+          </div></div></div>
           
-          <script>
-          
-          </script>
       </div>
     </div>
     <div class="modal-footer">
       <div class="btn">
         <button class="closebtn" type="button">Close</button>
         <button class="submitbtn" type="Submit">Submit</button>
+        <script>
+          
+          </script>
         {{ csrf_field() }}
           </form>
       </div>
@@ -281,6 +289,15 @@
     <div class="modal-body">
       <div class="divform">
         <form action="{{url('proposemail')}}" method="POST">
+        @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+              @endif
         <label for="Email">Email</label>
           <input type="email" id="Email" name="email" placeholder="Email">
           <br>
@@ -295,10 +312,13 @@
           </select>
           <br>
           <div class="setsummer">
+          <div class="row">
+          <div class="container">
+          <div class="col-lg-12">
           <label for="Overview2">Overview</label>
           <br>
           <textarea id="Overview2" name="overview"></textarea></div>
-          
+          </div></div></div>
           <script>
           
           </script>

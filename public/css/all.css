@@ -99,7 +99,7 @@ html,body{
     background: #fff;
 }
 .nav{
-    margin:-15px 35%;
+    margin:-15px 0% -15px 35%;
     font-size: 16px;
     font-weight: bold;
 }
@@ -115,7 +115,7 @@ html,body{
 }
 #isi1{
     margin-bottom: 100px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 #isi2{
     margin-bottom: 50px;
@@ -191,6 +191,7 @@ hr {
     -webkit-animation-duration:0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
+    box-shadow: none;
 }
 /*animation*/
 @-webkit-keyframes animatetop {
@@ -303,7 +304,7 @@ input[type=text]{
     opacity: 0.5;
 }
 .setsummer{
-    margin: 5% -7%;
+    margin: 5% 0%;
 }
 
 @media only screen and (min-width: 1500px)
@@ -311,19 +312,26 @@ input[type=text]{
     .nav{
         margin: -15px 0% -15px 43%;
     }
+    #isi{
+        margin-top: 50px;
+    }
 }
 @media only screen and (min-width: 1150px) and (max-width: 1500px)
 {
     .nav{
         margin: -15px 0% -15px 36%;
     }
-    
+   #isi{
+        margin-top: 50px;
     }
 }
 @media only screen and (max-width: 1150px) and (min-width: 830px)
 {
     .nav{
         margin:-15px 0% -15px 32%;
+    }
+        #isi{
+        margin-top: 50px;
     }
 }
 @media only screen and (max-width: 830px) and (min-width: 768px)
@@ -332,6 +340,9 @@ input[type=text]{
         margin: -15px 20px -15px 28%;
         font-size: 14px;
         font-weight: normal;
+    }
+    #isi{
+        margin-top: 50px;
     }
 }
 @media only screen and (max-width: 767px)
@@ -353,7 +364,7 @@ input[type=text]{
         margin-left: 43%;
     }
     #isi1{
-        margin-top: 0px;
+        margin-top: 50px;
     }
     .tech{
         font-size: 14pt;
