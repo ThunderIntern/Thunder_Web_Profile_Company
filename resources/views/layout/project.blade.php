@@ -16,7 +16,6 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.min.js"></script>
 </head>
-</head>
 <body>
 <!--navbar-->
 <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar-cp">
@@ -35,12 +34,11 @@
                 <li class="li3"><a href="#section3">PORTOFOLIO</a></li>
             </ul>
         </div>
-        </div>
-    </div>
-
+      </div>
 </nav>
 <!--end navbar-->
  @yield('alert')
+ 
 <section id="section1" class="content-section">
   <div class="container-fluid col-lg-12">
     <div class="row">

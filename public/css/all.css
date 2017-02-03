@@ -246,7 +246,7 @@ input[type=text]{
     margin-left: 5%;
 }
 .submitbtn{
-    background-color: #ccc;
+    background-color: #838487;
     border: 1px solid #ccc;
     color:#fff ;
     text-align: center;
@@ -260,6 +260,7 @@ input[type=text]{
 }
 .closebtn{
     background-color: #fff;
+    color: #ccc;
     border: 1px solid #ccc;
     text-align: center;
     text-decoration:none;
@@ -314,7 +315,7 @@ input[type=text]{
     display: block;
     z-index: 1;
     position: fixed;
-    background:transparent;
+    opacity: 0.5;
     border:1px solid #ccc;
 }
 .alert-content{
@@ -326,20 +327,25 @@ input[type=text]{
     -webkit-animation-duration:0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    border:1px solid #000;
+    border:1px solid #838487;
+    border-radius: 20px;
 }
 .alert-body{
     padding: 30px 50px;
-    background-color: #fefefe;
-    border:1px solid #ccc;
+    color: white;
+    background-color: #838487;
 }
 .alert-footer{
     padding: 2px 15px;
     border-top: 1px solid #ccc;
     background-color: #fff;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius: 20px;
 }
 .alert-btn{
-    margin: 2%;
+    text-align: center;
+    margin: 2% 0%;
+
 }
 
 @media only screen and (min-width: 1500px)

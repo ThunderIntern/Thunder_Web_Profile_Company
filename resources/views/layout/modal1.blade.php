@@ -58,7 +58,6 @@
       <div class="btn">
         <button class="closebtn" type="button">Close</button>
         <button class="submitbtn" type="Submit">Submit</button>
-               
         {{ csrf_field() }}
       </div>
       </form>
@@ -195,7 +194,7 @@
         </div>
         <div class="alert-footer">
           <div class="alert-btn">
-            <button id="Okey" class="button" type="button">Okey</button>
+            <button id="Okey" class="submitbtn" type="button">Okey</button>
           </div>
         </div>
       </div>
