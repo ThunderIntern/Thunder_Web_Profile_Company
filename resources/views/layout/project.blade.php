@@ -38,7 +38,7 @@
 </nav>
 <!--end navbar-->
  @yield('alert')
- 
+ @yield('succees')
 <section id="section1" class="content-section">
   <div class="container-fluid col-lg-12">
     <div class="row">

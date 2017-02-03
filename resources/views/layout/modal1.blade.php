@@ -182,14 +182,16 @@
   @if (count($errors) > 0)
     <div class="alert" id="alert">
       <div class="alert-content">
+      <div class="alert-header">
+          <h1>Your data is not valid</h1>            
+          </div>
         <div class="alert-body">
-          <h5>Your data is not valid</h5>
-          
-            <ul>
+
+            <ol>
             @foreach ($errors->all() as $error)
                   <li>{{ $error }}</li>
                 @endforeach
-              </ul>
+              </ol>
   
         </div>
         <div class="alert-footer">

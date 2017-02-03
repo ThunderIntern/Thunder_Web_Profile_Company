@@ -32,13 +32,13 @@ class proposecontroller extends Controller
                 //disini fungsi kirim email
                 Mail::to($this->request->input('email'))
                     ->send(new \App\Mail\proposeMail(($this->request->input('email')),($this->request->input('bisnis')),($this->request->input('overview'))));
-                return redirect()->back();
+                return view('layout.success');
             }
     
     //2b. jika validasi gagal, kembalikan ke halaman utama dengan error
         else
             {
-                return redirect()->back()->withErrors($validating->errors());
+                return view('layout.modal1')->withErrors($validating->errors());
             }
     }
 }

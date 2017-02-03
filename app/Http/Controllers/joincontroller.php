@@ -27,13 +27,13 @@ class joincontroller extends Controller
                 Mail::to(input::get('email'))
 					->send(new \App\Mail\joinmail((input::get('email')),(input::get('bidang')),(input::get('upload')),(input::get('letter'))));
 
-				return redirect()->back();
+				return view('layout.success');
             }
     
     //2b. jika validasi gagal, kembalikan ke halaman utama dengan error
         else
             {
-                return redirect()->back()->withErrors($validating->errors());
+                return view('layout.modal1')->withErrors($validating->errors());
             }
     }
 
