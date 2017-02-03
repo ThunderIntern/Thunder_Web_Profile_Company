@@ -15,9 +15,8 @@ Route::get('/welcome', function () {
 	    return view('/layout/master');
 });
 
-Route::get('/',function(){
-	return view('/layout/project');
-});
+Route::get('/','bladecontroller@modal');
+
 
 Route::post('/sendmail','mailcontroller@send');
 

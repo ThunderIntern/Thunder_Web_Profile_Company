@@ -10,11 +10,6 @@ use Illuminate\Support\Facades\Input;
 
 class joincontroller extends Controller
 {
-    public function __construct(\illuminate\Http\Request $request)
-    {
-        $this->request  = $request;
-    }
-
      public function send()
      {
     //\Illuminate\Support\Facades\Input = $request->input
@@ -29,8 +24,8 @@ class joincontroller extends Controller
             {
                 //$this->request->input('email') = Input::get('email')
                 //disini fungsi kirim email
-                Mail::to($this->request->input('email'))
-					->send(new \App\Mail\joinmail(($this->request->input('email')),($this->request->input('bidang')),($this->request->input('upload')),($this->request->input('letter'))));
+                Mail::to(input::get('email'))
+					->send(new \App\Mail\joinmail((input::get('email')),(input::get('bidang')),(input::get('upload')),(input::get('letter'))));
 
 				return redirect()->back();
             }

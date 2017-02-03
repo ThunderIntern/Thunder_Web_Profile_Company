@@ -40,123 +40,47 @@
 
 </nav>
 <!--end navbar-->
+ @yield('alert')
 <section id="section1" class="content-section">
   <div class="container-fluid col-lg-12">
-  <div class="row">
-    <img class="img-responsive" src="image/hero.jpg">
+    <div class="row">
+      <img class="img-responsive" src="image/hero.jpg">
     </div>
   </div>
 </section>
 <section id="section2" class="content-section text-center">
-	   <div id="isi1" class="row">
-      
+	   <div id="isi1" class="row"> 
 	     <h1 class="title"> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h1>
 	     <p class="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
 	     <br>into valuable system
 	     <br>we kept squad focus on their best</p>
 	   </div>
 </section>
-	<section class="content-section text-center">
-
-  <div class="container-fluid">
-  <div id="isi2" class="row">
-      <div class="col-sm-4"><h1 class="title">WEB DESIGN</h1><p class="menu"><br>Interface Design
+<section class="content-section text-center">
+    <div class="container-fluid">
+      <div id="isi2" class="row">
+        <div class="col-sm-4"><h1 class="title">WEB DESIGN</h1><p class="menu"><br>Interface Design
             <br>Responsive Design <br>UX Srategy</p></div>
-      <div class="col-sm-4"><h1 class="title">WEB DEVELOPMENT</h1><p class="menu" ="><br>System Analyst
+        <div class="col-sm-4"><h1 class="title">WEB DEVELOPMENT</h1><p class="menu" ="><br>System Analyst
             <br>Bussines Flow & Policy<br>Softwere Architecture</p></div>
-      <div class="col-sm-4"><h1 class="title">IMPLEMENTATION</h1><P class="menu"><br>System Performance
+        <div class="col-sm-4"><h1 class="title">IMPLEMENTATION</h1><P class="menu"><br>System Performance
             <br>Technical Help<br>QA & User Testing</P></div>
-  </div>
-  <div class="row">
-    <div class="text-center">
-    <!-- Trigger/Open The Modal -->
-      <button  id="Btn1" class="button">Join Our Squad</button>
-    <!-- The Modal -->
-    <div id="Modal1" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Join Our Squad</h2>
-    </div>
-    <div class="modal-body">
-      <div class="divform">
-        <form action="{{ url('joinmail')}}" method="POST">
-         @if (count($errors) > 0)
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                      <li>{{ $error }}</li>
-                @endforeach
-            </ul>
+      </div>
+      <div class="row">
+        <div class="text-center">
+          @yield('modal1')
         </div>
-              @endif
-         <label for="email" style="margin-left: 5%"> Email</label>&nbsp;&nbsp;&nbsp;
-        <br>
-          <input type="email" id="fEmail" name="email" placeholder="Email" value="{{old('email')}}">
-          <br>
-          <label for="bidang" style="margin-left:5%">Bidang</label>
-          <br>
-          <select id="fbidang" name="bidang">
-          <option value="{{old('bidang')}}">{{old('bidang')}}</option>
-          <optgroup label="Web Designer">
-            <option value="Interface Design">Interface Design</option>
-            <option value="Responsive Design">Responsive Design</option>
-            <option value="UX Strategy">UX Strategy</option>
-          </optgroup>
-          <optgroup label="Web Development">
-            <option value="System Analyst">System Analyst</option>
-            <option value="Business flows & policies">Business flows & policies</option>
-            <option value="Software Architecture">Software Architecture</option>
-          </optgroup>  
-          <optgroup label="Implementation">
-            <option value="System Performance">System Performance</option>
-            <option value="Technical Help"> Techical Help</option>
-            <option value="QA & User Testing">QA & User Testing</option>
-          </optgroup>
-           
-          </select>
-          <br>
-          <label for="file" style="margin-left: 5%">Upload</label>
-          <input type="file" name="upload" id="file" value="{{old('upload')}}" />
-          <div class="setsummer">
-          <div class="row">
-          <div class="container">
-          <div class="col-lg-12">
-          <label>cover letter </label>
-          <textarea name="letter" id="letter"  rows="10" class="form-control">{{old('letter')}}</textarea>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
       </div>
-    </div>
-    <div class="modal-footer">
-      <div class="btn">
-        <button class="closebtn" type="button">Close</button>
-        <button class="submitbtn" type="Submit">Submit</button>
-        {{ csrf_field() }}
-      </div>
-      </form>
-    </div>
-  </div>
-
-</div>
-<script src="/js/all.js"></script>
-    </div>
-  </div>
-  </div>
 </section>
 <section id="section3" class="content-section text-center">
-<div class="container-fluid">
-  <div id="isi1">
-    <h1 class="title"><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
-    <p class="tech" ><br>We are focusing in helping small business to run like a
-    <br>big cooperate,so that they can focus on their growth.We<br>are archieving that by offering
-    tech solution with many<br>service like accounting tech solution,data analysis<br>solution,HR
-    tech solution,costumer relation management,<br>management tech solution, and much more.
-  </div>
+    <div class="container-fluid">
+      <div id="isi1">
+        <h1 class="title"><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
+        <p class="tech" ><br>We are focusing in helping small business to run like a
+        <br>big cooperate,so that they can focus on their growth.We<br>are archieving that by offering
+          tech solution with many<br>service like accounting tech solution,data analysis<br>solution,HR
+          tech solution,costumer relation management,<br>management tech solution, and much more.
+      </div>
   <div class="row">
       <div class="col-sm-4 hidden-xs "><span class="textright"><h1 >HOTEL</h1><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com/</a></span></div>
       <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>HOTEL</h1><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com</a></p></div>
@@ -215,127 +139,9 @@
 </section>
 <section>
    <div class="row">
-    <div class="text-center "><button id="myBtn" class="button" >Request A Demo</button>
-    <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Request Our Demo</h2>
-    </div>
-    <div class="modal-body">
-      <div class="divform">
-        <form action="{{ url('sendmail') }}" method="POST">
-              @if (count($errors) > 0)
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                      <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-              @endif
-        <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" value="{{old('email')}}">
-          @if($errors->has('email'))
-          <p>{{$errors->first('email')}} </p>
-          @endif
-          <br>
-          <label for="Bisnis">Bisnis</label>
-          <select id="Bisnis" name="bisnis">
-            <option value="{{old('bisnis')}}">{{old('bisnis')}}</option>
-            <option value="hotel">Hotel</option>
-            <option value="sekolah">Sekolah</option>
-            <option value="koperasi">Koperasi</option>
-            <option value="notaris">Notaris</option>
-            <option value="akutansi">Akutansi</option>
-            <option value="ecommerce">Ecommerce</option>
-          </select>
-          <br>
-          <div class="setsummer">
-          <div class="row">
-          <div class="container">
-          <div class="col-lg-12">
-          <label for="Overview1">Overview</label>
-          <br>
-          <textarea id="Overview1" name="overview"></textarea></div>
-          </div></div></div>
-          
-      </div>
-    </div>
-    <div class="modal-footer">
-      <div class="btn">
-        <button class="closebtn" type="button">Close</button>
-        <button class="submitbtn" type="Submit">Submit</button>
-        <script>
-          
-          </script>
-        {{ csrf_field() }}
-          </form>
-      </div>
-    </div>
-  </div>
-
-</div>
-<script src="/js/all.js"></script>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Btn3" class="button">Propose A Service</button>
-    <div id="Modal3" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Propose A Service</h2>
-    </div>
-    <div class="modal-body">
-      <div class="divform">
-        <form action="{{url('proposemail')}}" method="POST">
-        @if (count($errors) > 0)
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                      <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-              @endif
-        <label for="Email">Email</label>
-          <input type="email" id="Email" name="email" placeholder="Email">
-          <br>
-          <label for="Bisnis">Bisnis</label>
-          <select id="Bisnis" name="bisnis">
-            <option value="hotel">Hotel</option>
-            <option value="sekolah">Sekolah</option>
-            <option value="koperasi">Koperasi</option>
-            <option value="notaris">Notaris</option>
-            <option value="akutansi">Akutansi</option>
-            <option value="ecommerce">Ecommerce</option>
-          </select>
-          <br>
-          <div class="setsummer">
-          <div class="row">
-          <div class="container">
-          <div class="col-lg-12">
-          <label for="Overview2">Overview</label>
-          <br>
-          <textarea id="Overview2" name="overview"></textarea></div>
-          </div></div></div>
-          <script>
-          
-          </script>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <div class="btn">
-        <button class="closebtn" type="button">Close</button>
-        <button class="submitbtn" type="Submit">Submit</button>
-        {{ csrf_field() }}
-        </form>
-      </div>
-    </div>
-  </div>
-
-</div>
-<script src="/js/all.js"></script>
+    <div class="text-center ">
+   @yield('modal2')
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@yield('modal3')
 </div><a href="#section1"><span class="sprite ieGoto" ></span></a></div>
 </section>
 <footer class="footer">
