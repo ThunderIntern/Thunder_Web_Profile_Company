@@ -15,7 +15,6 @@ class proposecontroller extends Controller
     {
         $this->request  = $request;
     }
-
      public function send()
      {
     //\Illuminate\Support\Facades\Input = $request->input
