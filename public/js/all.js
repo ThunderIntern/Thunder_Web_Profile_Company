@@ -101,9 +101,10 @@ function playclip7() {
               var audio = document.getElementsByTagName("audio")[7];
               audio.play();}
 $(document).ready(function() {
-          var markupStr = $('.summernote').eq(1).summernote('code');
           });
-          $('#letter').summernote({});
+          $('#letter').summernote({
+             height:300
+          });
 $(document).ready(function() {
           var markupStr = $('.summernote').eq(1).summernote('code');
           });
