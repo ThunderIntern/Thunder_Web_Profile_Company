@@ -18,9 +18,9 @@
     cursor: pointer;
 }
 .ielogo {
-        margin-top: 15px;
+        margin-top: 10px;
         width: 54px; /* Icon width */
-        height: 53px; /* Icon height */
+        height: 53.2px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: 0 0px; /* Icon background position in sprite */
         cursor: pointer;
@@ -50,8 +50,8 @@
         background-position: 0 -106px; /* Icon background position in sprite */
     }
 .ieTwi {
-        width: 20px; /* Icon width */
-        height: 18px; /* Icon height */
+        width: 21px; /* Icon width */
+        height: 20px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: -15px -106px; /* Icon background position in sprite */
     }
@@ -76,6 +76,7 @@
 }
 .tech{
     font-size: 16pt;
+    margin: 0% 16.66%;
 }
 .menu{
     font-size: 14pt;
@@ -139,6 +140,9 @@ html,body{
 }
 #section1{
     margin-top: 70px;
+}
+#section2{
+    margin-top: 30px;
 }
 .row{
     margin-bottom: 30px;
@@ -425,6 +429,7 @@ input[type=text]{
     }
     .tech{
         font-size: 14pt;
+        margin: 0% 0%;
     }
     .menu{
         font-size: 12pt;

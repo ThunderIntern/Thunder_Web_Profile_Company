@@ -39,22 +39,22 @@
 <!--end navbar-->
  @yield('alert')
  @yield('succees')
-<section id="section1" class="content-section">
+<section id="section1">
   <div class="container-fluid col-lg-12">
     <div class="row">
       <img class="img-responsive" src="image/hero.jpg">
     </div>
   </div>
 </section>
-<section id="section2" class="content-section text-center">
+
+<section id="section2"  class="text-center">
 	   <div id="isi1" class="row"> 
 	     <h1 class="title"> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h1>
 	     <p class="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
 	     <br>into valuable system
 	     <br>we kept squad focus on their best</p>
 	   </div>
-</section>
-<section class="content-section text-center">
+  <div  class="content-section text-center">
     <div class="container-fluid">
       <div id="isi2" class="row">
         <div class="col-sm-4"><h1 class="title">WEB DESIGN</h1><p class="menu"><br>Interface Design
@@ -69,15 +69,18 @@
           @yield('modal1')
         </div>
       </div>
+</div>
 </section>
+
 <section id="section3" class="content-section text-center">
     <div class="container-fluid">
-      <div id="isi1">
         <h1 class="title"><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
-        <p class="tech" ><br>We are focusing in helping small business to run like a
-        <br>big cooperate,so that they can focus on their growth.We<br>are archieving that by offering
-          tech solution with many<br>service like accounting tech solution,data analysis<br>solution,HR
-          tech solution,costumer relation management,<br>management tech solution, and much more.
+        <p class="tech col-sm-8 col-xs-12">
+        We are focusing in helping small business to run like a big cooperate,so that they can focus on their growth.We are archieving that by offering tech solution with many service like accounting tech solution,data analysis solution,HR tech solution,costumer relation management,management tech solution, and much more.
+        </p>
+        <!-- <p class="tech visible-xs-inline-block">
+          We are focusing in helping small business to run like a big cooperate,so that they can focus on their growth.We are archieving that by offering tech solution with many service like accounting tech solution,data analysis solution,HR tech solution,costumer relation management,management tech solution, and much more.
+        </p>-->
       </div>
   <div class="row">
       <div class="col-sm-4 hidden-xs "><span class="textright"><h1 >HOTEL</h1><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com/</a></span></div>
@@ -148,7 +151,7 @@
   &copy;2017 Thunderlab.id
 </div>
 <div class="footright">
-  Stay Update<span class="sprite iefb"><a href="http://www.facebook.com"></a></span><span class="sprite ieTwi"><a href="http://www.twitter.com"></a></span>
+  Stay Update<span class="sprite iefb"><a href="http://www.facebook.com" target="_blank"></a></span><span class="sprite ieTwi"><a href="http://www.twitter.com" target="_blank"></a></span>
 </div>
 </footer> 
 </body>
