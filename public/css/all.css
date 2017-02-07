@@ -18,9 +18,9 @@
     cursor: pointer;
 }
 .ielogo {
-        margin-top: 15px;
+        margin-top: 10px;
         width: 54px; /* Icon width */
-        height: 53px; /* Icon height */
+        height: 53.2px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: 0 0px; /* Icon background position in sprite */
         cursor: pointer;
@@ -75,7 +75,7 @@
     margin-top: 100px;
 }
 .tech{
-    font-size: 16pt;
+    font-size: 14pt;
 }
 .menu{
     font-size: 14pt;
@@ -118,7 +118,7 @@ html,body{
     margin-top: 50px;
 }
 #isi2{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #isi3{
     margin-top:100px
@@ -305,7 +305,12 @@ input[type=text]{
     opacity: 0.5;
 }
 .setsummer{
-    margin: 5% 0%;
+    margin: 5% -7%;
+}
+.summernote{
+    margin: 5% -15%;  
+}
+
 }
 .alert{
     width: 100%;
@@ -375,6 +380,9 @@ input[type=text]{
    #isi{
         margin-top: 50px;
     }
+    .title{
+        font size: 12pt;
+    }
 }
 @media only screen and (max-width: 1150px) and (min-width: 830px)
 {
@@ -387,7 +395,13 @@ input[type=text]{
     #header-success{
     font-size:16pt;
     }
-}
+    .title{
+        font size: 24pt;
+    }
+    .menu{
+        font-size: 10pt;
+    }
+}   
 @media only screen and (max-width: 830px) and (min-width: 768px)
 {
     .nav{
@@ -401,6 +415,7 @@ input[type=text]{
     #header-success{
     font-size:12pt;
 }
+
 }
 @media only screen and (max-width: 767px)
 {
@@ -422,15 +437,21 @@ input[type=text]{
     }
     #isi1{
         margin-top: 50px;
+        margin-bottom:30px; 
     }
     .tech{
         font-size: 14pt;
     }
     .menu{
         font-size: 12pt;
+        margin-top: -30px;
+    }
+    .clm{
+        margin-bottom: 30px;
     }
     .title{
         font-size: 16pt;
+        margin bottom: 5px;
     }
     #section1{
         margin-top: 60px;
@@ -472,4 +493,5 @@ input[type=text]{
     font-size:10pt;
 }
 }
+
 /*# sourceMappingURL=all.css.map */
