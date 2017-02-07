@@ -1,0 +1,478 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"mr",
+				"margin-bottom"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"route",
+				"Route"
+			],
+			[
+				"summ",
+				"summernote"
+			],
+			[
+				"te",
+				"textarea\tTag"
+			],
+			[
+				"a",
+				"action\tAttr"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"col",
+				"col-sm-4"
+			],
+			[
+				"sm",
+				"col-sm-12"
+			],
+			[
+				"col-sm",
+				"col-sm-12"
+			],
+			[
+				"V",
+				"visible-xs-inline-block"
+			],
+			[
+				"re",
+				"reliance-insurance"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"i",
+				"id\tAttr"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"col-x",
+				"col-xs-12"
+			],
+			[
+				"l",
+				"link"
+			],
+			[
+				"vi",
+				"visible-xs-inline-block"
+			],
+			[
+				"col-",
+				"col-xs-12"
+			],
+			[
+				"m",
+				"margin-top"
+			],
+			[
+				"ma",
+				"max-height"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"tex",
+				"text"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"f",
+				"for\tAttr"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ro",
+				"Route"
+			],
+			[
+				"modal",
+				"modal2"
+			],
+			[
+				"sc",
+				"script\tTag"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"j",
+				"jpg"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"high",
+				"height"
+			],
+			[
+				"na",
+				"nav\tTag"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"contror",
+				"controller"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/laravel5/resources/views/layout/modal1.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/layout/project.blade.php",
+		"/C/Users/ASUS/Documents/GitHub/Thunder_Web_Profile_Company/.env",
+		"/C/xampp/htdocs/laravel5/.env",
+		"/C/xampp/htdocs/laravel5/config/mail.php",
+		"/C/Users/ASUS/Documents/GitHub/Thunder_Web_Profile_Company/resources/views/layout/modal1.blade.php",
+		"/C/Users/ASUS/Documents/GitHub/Thunder_Web_Profile_Company/resources/views/layout/project.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/assets/js/jquery-3.1.1.min.js",
+		"/C/xampp/htdocs/laravel5/resources/assets/js/Modal1.js",
+		"/C/xampp/htdocs/laravel5/resources/views/modal3.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/modal2.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/modal1.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/model.blade.php",
+		"/C/xampp/htdocs/laravel5/public/js/bootstrap.min.js",
+		"/C/xampp/htdocs/laravel5/gulpfile.js",
+		"/C/xampp/htdocs/laravel5/resources/assets/css/summernote.css",
+		"/C/xampp/htdocs/laravel5/resources/assets/js/letter.js",
+		"/C/xampp/htdocs/laravel5/public/css/summernote.css",
+		"/C/xampp/htdocs/laravel5/resources/assets/js/overview2.js",
+		"/C/xampp/htdocs/laravel5/resources/assets/js/overview1.js",
+		"/C/xampp/htdocs/laravel5/routes/web.php",
+		"/C/xampp/htdocs/laravel5/app/Mail/OrderShipped.php",
+		"/C/xampp/htdocs/laravel5/resources/assets/js/myModal.js",
+		"/C/xampp/htdocs/laravel5/public/css/thunderlab.css",
+		"/C/Users/ASUS/Documents/GitHub/Thunder_Web_Profile_Company/resources/assets/css/ThunderLab.css",
+		"/C/xampp/htdocs/laravel5/resources/assets/sass/app.scss",
+		"/C/xampp/htdocs/laravel5/config/services.php",
+		"/C/xampp/htdocs/laravel5/composer.json",
+		"/C/xampp/htdocs/laravel5/resources/views/blog/home.blade.php",
+		"/C/xampp/htdocs/laravel5/public/image/hr.jpg",
+		"/C/xampp/htdocs/laravel5/public/image/hero.jpg",
+		"/C/xampp/htdocs/laravel5/resources/views/layout/project2.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/project2",
+		"/C/xampp/htdocs/laravel5/resources/views/thunderlab.css",
+		"/C/xampp/htdocs/laravel5/resources/views/asw.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/nav.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/footer.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/asd.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/percobaan.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/header.blade.php",
+		"/C/xampp/htdocs/laravel5/public/css/modal.css",
+		"/C/xampp/htdocs/laravel5/public/css/model.css",
+		"/C/xampp/htdocs/laravel5/resources/views/modal.js",
+		"/C/xampp/htdocs/laravel5/resources/views/modal.css",
+		"/C/xampp/htdocs/laravel5/resources/views/gulpfile.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/assets/sass/_variables.scss",
+		"/C/xampp/htdocs/laravel5/resources/views/home.blade.php",
+		"/C/xampp/htdocs/laravel5/resources/views/profil.blade.php",
+		"/C/xampp/htdocs/laravel5/config/app.php",
+		"/C/xampp/htdocs/laravel5/resources/views/index.php",
+		"/C/xampp/htdocs/laravel5/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/myproject/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/myproject/routes/proker"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\laravel5\\resources\\views\\blog"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"<?",
+			"nav",
+			"jpg",
+			".panel-heading.note-toolbar",
+			"}",
+			"15px",
+			"femail",
+			"divfrom",
+			"div from",
+			"z",
+			"moda",
+			"%;",
+			"qwerty",
+			"home.blade.php",
+			"World"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ThunderLab.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"m",
+				"config\\mail.php"
+			],
+			[
+				"mail.",
+				"config\\mail.php"
+			],
+			[
+				"mail",
+				"config\\mail.php"
+			],
+			[
+				"",
+				".env"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -49,7 +49,7 @@
 
 <section id="section2"  class="text-center">
 	   <div id="isi1" class="row"> 
-	     <h1 class="title"> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h1>
+	     <h2 class="title"> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h2>
 	     <p class="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
 	     <br>into valuable system
 	     <br>we kept squad focus on their best</p>
@@ -57,11 +57,11 @@
   <div  class="content-section text-center">
     <div class="container-fluid">
       <div id="isi2" class="row">
-        <div class="col-sm-4"><h1 class="title">WEB DESIGN</h1><p class="menu"><br>Interface Design
+        <div class="col-sm-4 clm"><h3 class="title">WEB DESIGN</h3><p class="menu"><br>Interface Design
             <br>Responsive Design <br>UX Srategy</p></div>
-        <div class="col-sm-4"><h1 class="title">WEB DEVELOPMENT</h1><p class="menu" ="><br>System Analyst
+        <div class="col-sm-4 clm"><h3 class="title">WEB DEVELOPMENT</h3><p class="menu" ="><br>System Analyst
             <br>Bussines Flow & Policy<br>Softwere Architecture</p></div>
-        <div class="col-sm-4"><h1 class="title">IMPLEMENTATION</h1><P class="menu"><br>System Performance
+        <div class="col-sm-4 clm"><h3 class="title">IMPLEMENTATION</h3><P class="menu"><br>System Performance
             <br>Technical Help<br>QA & User Testing</P></div>
       </div>
       <div class="row">
