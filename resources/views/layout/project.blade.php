@@ -29,13 +29,13 @@
       <span><a class="navbar-brand" href="#section1"  id="span"><span class="sprite ieminilogo"></span></a></span>
       <div class="collapse navbar-collapse" id="idnav">
             <ul class="nav navbar-nav">
-                <li class="li1" ><a href="#section2">LABORATORY</a></li>
+                <li class="li1" ><a class="tech" href="#section2">LABORATORY</a></li>
                 <li class="hidden-xs"><a href="#section1"><span class="sprite ielogo"></span></a></li>
-                <li class="li3"><a href="#section3">PORTOFOLIO</a></li>
+                <li class="li3"><a class="tech" href="#section3">PORTOFOLIO</a></li>
             </ul>
         </div>
       </div>
-</nav>
+</nav
 <!--end navbar-->
  @yield('alert')
  @yield('succees')
@@ -49,8 +49,8 @@
 
 <section id="section2"  class="text-center">
 	   <div id="isi1" class="row"> 
-	     <h2 class="title"> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h2>
-	     <p class="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
+	     <h1 class="title"> <span class="sprite ieTicon"></span> TECH SOLUTION ARTISAN <span class="sprite ieTicon"></span></h1>
+	     <p id="tech1" class="tech"><br>In the thunderweb,we crafted thousands line of beautiful codes
 	     <br>into valuable system
 	     <br>we kept squad focus on their best</p>
 	   </div>
@@ -75,37 +75,34 @@
 <section id="section3" class="content-section text-center">
     <div class="container-fluid">
         <h1 class="title"><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
-        <p class="tech col-sm-8 col-xs-12">
+        <p id="sect3" class="tech col-sm-8 col-xs-12">
         We are focusing in helping small business to run like a big cooperate,so that they can focus on their growth.We are archieving that by offering tech solution with many service like accounting tech solution,data analysis solution,HR tech solution,costumer relation management,management tech solution, and much more.
         </p>
-        <!-- <p class="tech visible-xs-inline-block">
-          We are focusing in helping small business to run like a big cooperate,so that they can focus on their growth.We are archieving that by offering tech solution with many service like accounting tech solution,data analysis solution,HR tech solution,costumer relation management,management tech solution, and much more.
-        </p>-->
       </div>
   <div class="row">
-      <div class="col-sm-4 hidden-xs "><span class="textright"><h1 >HOTEL</h1><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com/</a></span></div>
-      <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>HOTEL</h1><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com</a></p></div>
+      <div class="col-sm-4 hidden-xs "><span class="textright"><h1>HOTEL</h1><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com/</a></span></div>
+      <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>HOTEL</h3><a id="link" href="http://hotelriverstone.com/" target="_blank">http://hotelriverstone.com</a></p></div>
 
       <img class="img-responsive" id="doremi" onmouseover="playclip();" src="image/hotel.jpg">
       <audio class="audio" src="/audio/sound_doremi/do.mp3"></audio>
        </div>
       </div>
 <div class="row">
-      <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>EDUKASI</h1><a id="link" href="https://bloom.id" target="_blank">https://bloom.id</a></p></div>
+      <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>EDUKASI</h3><a id="link" href="https://bloom.id" target="_blank">https://bloom.id</a></p></div>
       <img class="img-responsive" id="doremi" onmouseover="playclip1();" src="image/edukasi.jpg">
       <audio class="audio" src="/audio/sound_doremi/re.mp3"></audio>
        </div>
-      <div class="col-sm-4 hidden-xs"><span class="textleft"><h1 >EDUKASI</h1><a id="link" href="https://bloom.id/" target="_blank" >https://bloom.id/</a></span></div>
+      <div class="col-sm-4 hidden-xs"><span class="textleft"><h1>EDUKASI</h1><a id="link" href="https://bloom.id/" target="_blank" >https://bloom.id/</a></span></div>
 </div>
 <div class="row">
   <div class="col-sm-4 hidden-xs"><span class="textright"><h1>AKUNTANSI</h1></span></div>
-  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>AKUNTANSI</h1></p></div>
+  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>AKUNTANSI</h3></p></div>
   <img class="img-responsive" id="doremi" onmouseover="playclip2();" src="image/akuntansi.jpg">
   <audio class="audio" src="/audio/sound_doremi/mi.mp3"></audio>
    </div>
 </div>
 <div class="row">
-  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>TRAVEL</h1><a id="link" href="http://www.tamasyahati.com" target="_blank">http://www.tamasyahati.com</a><br><a id="link" href="http://capcus.id" target="_blank">http://capcus.id</a></p></div>
+  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>TRAVEL</h3><a id="link" href="http://www.tamasyahati.com" target="_blank">http://www.tamasyahati.com</a><br><a id="link" href="http://capcus.id" target="_blank">http://capcus.id</a></p></div>
   <img class="img-responsive" id="doremi" onmouseover="playclip3();" src="image/travel.jpg">
   <audio class="audio" src="/audio/sound_doremi/fa.mp3"></audio>
    </div>
@@ -113,25 +110,25 @@
 </div>
 <div class="row">
   <div class="col-sm-4 hidden-xs"><span class="textright"><h1>PORTAL</h1><a class="link"  href="http://halomalang.com/" target="_blank">http://halomalang/.com<br><a id="link" href="http://gopego.com" target="_blank">http://gopego.com/</a></a></div>
-  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>PORTAL</h1><a id="link" href="http://halomalang.com/" target="_blank">http://halomalang.com/</a><br><a id="link" href="http://gopego.com" target="_blank">http://gopego.com/</a></p></div>
+  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>PORTAL</h3><a id="link" href="http://halomalang.com/" target="_blank">http://halomalang.com/</a><br><a id="link" href="http://gopego.com" target="_blank">http://gopego.com/</a></p></div>
   <img class="img-responsive" id="doremi" onmouseover="playclip4();" src="image/portal.jpg">
   <audio class="audio" src="/audio/sound_doremi/sol.mp3"></audio>
    </div>
 </div>
 <div class="row">
-  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>E-COMMERCE</h1><a id="link" href="http://balin.id/" target="">http://balin.id/</a></p></div><img class="img-responsive" id="doremi" onmouseover="playclip5();" src="image/e-commerce.jpg">
+  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>E-COMMERCE</h3><a id="link" href="http://balin.id/" target="">http://balin.id/</a></p></div><img class="img-responsive" id="doremi" onmouseover="playclip5();" src="image/e-commerce.jpg">
   <audio class="audio" src="/audio/sound_doremi/la.mp3"></audio>
   </div>
   <div class="col-xs-4 hidden-xs"><span class="textleft"><h1>E-COMMERCE</h1><a id="link" href="http://balin.id/" target="_blank">http://balin.id/</a></span></div>
 </div>
 <div class="row">
   <div class="col-sm-4 hidden-xs"><span class="textright"><h1>HR</h1><a id="link" href="http://www.reliance-insurance.com/" target="_blank">http://www.reliance-insurance.com/</a></span></div>
-  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>HR</h1><a id="link" href="http://www.reliance-insurance.com/" target="_blank">http://www.reliance-insurance.com/</a></p></div><img class="img-responsive" id="doremi" onmouseover="playclip6();" src="image/hr.jpg">
+  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>HR</h3><a id="link" href="http://www.reliance-insurance.com/" target="_blank">http://www.reliance-insurance.com/</a></p></div><img class="img-responsive" id="doremi" onmouseover="playclip6();" src="image/hr.jpg">
   <audio class="audio" src="/audio/sound_doremi/si.mp3"></audio>
    </div>
 </div>
 <div class="row">
-  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h1>NOTARIS</h1></p></div><img class="img-responsive" id="doremi" onmouseover="playclip7();" src="image/notaris.jpg">
+  <div class="col-sm-8 col-xs-12"><div class="visible-xs-inline-block"><p><h3>NOTARIS</h3></p></div><img class="img-responsive" id="doremi" onmouseover="playclip7();" src="image/notaris.jpg">
   <audio class="audio" src="/audio/sound_doremi/do(octave).mp3"></audio>
   </div>
   <div class="col-sm-4 hidden-xs"><span class="textleft"><h1>NOTARIS</h1></span></div>

@@ -4,6 +4,9 @@
     margin-left: : 43%;
     float: left;
 }
+#section3{
+    margin-top: 50px;
+}
 .img-responsive{
     width: 100%;
 }
@@ -14,7 +17,7 @@
     width: 46px;
     height: 53px;
     display: inline-block;
-    background-position: 0 -125px;
+    background-position: -1px -133px;
     cursor: pointer;
 }
 .ielogo {
@@ -31,7 +34,7 @@
         width: 13px; /* Icon width */
         height: 25px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: -35px -110px; /* Icon background position in sprite */
+        background-position: -38px -115px; /* Icon background position in sprite */
     }
 .ieGoto {
         float: right;
@@ -39,7 +42,7 @@
         width: 53px; /* Icon width */
         height: 53px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 -52px; /* Icon background position in sprite */
+        background-position: 0 -57px; /* Icon background position in sprite */
         cursor: pointer;
     }
 .iefb {
@@ -47,13 +50,13 @@
         width: 10px; /* Icon width */
         height: 21px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: 0 -106px; /* Icon background position in sprite */
+        background-position: 0 -111px; /* Icon background position in sprite */
     }
 .ieTwi {
         width: 21px; /* Icon width */
         height: 20px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
-        background-position: -15px -106px; /* Icon background position in sprite */
+        background-position: -14px -114px; /* Icon background position in sprite */
     }
 .button{
 	background-color: #fff;
@@ -75,12 +78,7 @@
     margin-top: 100px;
 }
 .tech{
-<<<<<<< HEAD
     font-size: 16pt;
-    margin: 0% 16.66%;
-=======
-    font-size: 14pt;
->>>>>>> origin/master
 }
 .menu{
     font-size: 14pt;
@@ -120,13 +118,18 @@ html,body{
 }
 #isi1{
     margin-bottom: 100px;
-    margin-top: 50px;
 }
 #isi2{
     margin-bottom: 30px;
 }
 #isi3{
     margin-top:100px
+}
+#sect3{
+    margin: 3% 16.66% 10%;
+}
+.title{
+    font-size: 28px;
 }
 .footer{
     width: inherit;
@@ -143,10 +146,10 @@ html,body{
     margin-top: 20px;
 }
 #section1{
-    margin-top: 70px;
-}
-#section2{
-    margin-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    width: auto;
+    height: auto;
 }
 .row{
     margin-bottom: 30px;
@@ -318,8 +321,6 @@ input[type=text]{
 .summernote{
     margin: 5% -15%;  
 }
-
-}
 .alert{
     width: 100%;
     height: 100%;
@@ -369,6 +370,9 @@ input[type=text]{
     color: #838487;
     padding: 2px 15px;
 }
+#tech1{
+    margin-top: -20px;
+}
 
 
 @media only screen and (min-width: 1500px)
@@ -379,17 +383,23 @@ input[type=text]{
     #isi{
         margin-top: 50px;
     }
+    .title{
+        font-size: 40px;
+    }
+    .menu{
+        font-size: 18pt;
+    }
+    .tech{
+        font-size: 24pt;
+    }
 }
 @media only screen and (min-width: 1150px) and (max-width: 1500px)
 {
     .nav{
         margin: -15px 0% -15px 36%;
     }
-   #isi{
-        margin-top: 50px;
-    }
-    .title{
-        font size: 12pt;
+   #isi1{
+        margin-top: 0px;
     }
 }
 @media only screen and (max-width: 1150px) and (min-width: 830px)
@@ -397,17 +407,24 @@ input[type=text]{
     .nav{
         margin:-15px 0% -15px 32%;
     }
-        #isi{
-        margin-top: 50px;
+    #isi1{
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
     #header-success{
-    font-size:16pt;
-    }
-    .title{
-        font size: 24pt;
+        font-size:16pt;
     }
     .menu{
         font-size: 10pt;
+    }
+    #section2{
+        margin-top: -30px;
+    }
+    .title{
+        font-size: 19px;
+    }
+    .tech{
+        font-size: 12pt;
     }
 }   
 @media only screen and (max-width: 830px) and (min-width: 768px)
@@ -417,12 +434,22 @@ input[type=text]{
         font-size: 14px;
         font-weight: normal;
     }
-    #isi{
-        margin-top: 50px;
+    #isi1{
+        margin-top: -40px;
+        margin-bottom: 30px;
     }
     #header-success{
     font-size:12pt;
-}
+    }
+    .title{
+        font-size: 19px;
+    }
+    .tech{
+        font-size: 12pt;
+    }
+    .menu{
+        font-size: 10pt;
+    }
 
 }
 @media only screen and (max-width: 767px)
@@ -432,10 +459,23 @@ input[type=text]{
         padding-bottom: 10px;
     }
     .nav{
+        width: 100%;
+        display: inline;
+        clear: both;
+        margin: 0%;
         font-weight: normal;
     }
     .collapse{
     margin-top: 50px;
+    }
+    .ieGoto {
+        float: right;
+        margin-right: -7%;
+        width: 53px; /* Icon width */
+        height: 53px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 -57px; /* Icon background position in sprite */
+        cursor: pointer;
     }
     #span{
         visibility: visible;
@@ -444,12 +484,25 @@ input[type=text]{
         margin-left: 43%;
     }
     #isi1{
-        margin-top: 50px;
+        margin-top: -40px;
         margin-bottom:30px; 
+    }
+    .li1{
+        float: left;
+        margin-left: 15%;
+    }
+    .li3{
+        float: right;
+        margin-right: 15%;
     }
     .tech{
         font-size: 14pt;
-        margin: 0% 0%;
+    }
+    #section3{
+        margin-top: 0px;
+    }
+    #sect3{
+        margin: 3% 0% 10%;
     }
     .menu{
         font-size: 12pt;
@@ -459,8 +512,8 @@ input[type=text]{
         margin-bottom: 30px;
     }
     .title{
-        font-size: 16pt;
         margin bottom: 5px;
+        font-size: 24px;
     }
     #section1{
         margin-top: 60px;
@@ -470,15 +523,90 @@ input[type=text]{
     }
     #header-success{
     font-size: 12pt;
+    }
+    .footright{
+        margin-top: 13px;
+        margin-right: 10px;
+    }
+    .footleft{
+        margin-left: 10px;
+    }
 }
-}
-@media screen and (max-width: 425px)
+@media only screen and (max-width: 425px)
 {
+    .row{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
     .button{
         font-size: 12px;
     }
+    .sprite {
+   background: url("/image/sprite.png") no-repeat;
+    }
+.ieminilogo{
+    width: 46px;
+    height: 53px;
+    display: inline-block;
+    background-position: -1px -133px;
+    cursor: pointer;
+}
+.ielogo {
+        margin-top: 10px;
+        width: 54px; /* Icon width */
+        height: 53.2px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 0px; /* Icon background position in sprite */
+        cursor: pointer;
+    }
+
+.ieTicon {
+        margin:0 30px;
+        width: 13px; /* Icon width */
+        height: 25px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: -38px -115px; /* Icon background position in sprite */
+    }
+.ieGoto {
+        float: right;
+        margin-right: 0%;
+        width: 28px; /* Icon width */
+        height:29px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: -8px -189px; /* Icon background position in sprite */
+        cursor: pointer;
+    }
+.iefb {
+        margin: 0px 10px;
+        width: 10px; /* Icon width */
+        height: 21px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: 0 -111px; /* Icon background position in sprite */
+    }
+.ieTwi {
+        width: 21px; /* Icon width */
+        height: 20px; /* Icon height */
+        display: inline-block; /* Display icon as inline block */
+        background-position: -14px -114px; /* Icon background position in sprite */
+    }
     .nav{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
         font-weight: normal;
+        margin: -30px 0% -15px;
+    }
+    .li3{
+        float: right;
+        margin:0%;
+    }
+    .li1{
+        float: left;
+        margin:0%;
+
+    }
+    #isi2{
+        margin: 0px;
     }
     #span{
         margin-left: 38%;
@@ -487,10 +615,8 @@ input[type=text]{
         font-size: 10pt;
     }
     .menu{
-        font-size: 10pt;
-    }
-    .title{
-        font-size: 12pt;
+        font-size: 8pt;
+        margin-top: -20px;
     }
     .ieTicon {
         margin:0 10px;
@@ -500,7 +626,17 @@ input[type=text]{
     }
     #header-success{
     font-size:10pt;
-}
+    }
+    .title{
+        font-size: 16px;
+    }
+    .footright{
+        margin-top: 11px;
+        margin-right: 10px;
+    }
+    .footleft{
+        margin-left: 10px;
+    }
 }
 
 /*# sourceMappingURL=all.css.map */
