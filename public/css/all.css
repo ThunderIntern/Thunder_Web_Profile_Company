@@ -52,6 +52,7 @@
         display: inline-block; /* Display icon as inline block */
         background-position: 0 -111px; /* Icon background position in sprite */
         cursor: pointer;
+        float: right;
     }
 .ieTwi {
         width: 21px; /* Icon width */
@@ -59,6 +60,7 @@
         display: inline-block; /* Display icon as inline block */
         background-position: -14px -114px; /* Icon background position in sprite */
         cursor: pointer;
+        float: right;
     }
 .kolom-xs-12{
         width:50%;
@@ -155,7 +157,6 @@ html,body{
 }
 .footright{
     float: right;
-    margin-right: 60px;
     margin-top: 20px;
 }
 #section1{
@@ -254,7 +255,7 @@ hr {
     float: right;
 }
 input[type=email],select{
-    width: 80%;
+    width: 90%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
@@ -265,7 +266,7 @@ input[type=email],select{
     margin-left:5%;
 }
 input[type=text]{
-    width: 80%;
+    width: 90%;
     padding: 8px 20px;
     margin: 8px 10px;
     display: inline-block;
@@ -335,7 +336,7 @@ input[type=text]{
     opacity: 0.5;
 }
 .setsummer{
-    margin: 5% -7%;
+    margin: 5% 5% 5% 5%;
 }
 .summernote{
     margin: 5% -15%;  
@@ -392,7 +393,21 @@ input[type=text]{
 #tech1{
     margin-top: -20px;
 }
-
+.medsos{
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.straight{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.navbar-toggle{
+    margin-right: 0px;
+}
+.navbar-default{
+    border-color: #fff;
+}
 
 @media only screen and (min-width: 1500px)
 {
@@ -505,10 +520,12 @@ input[type=text]{
     .li1{
         float: left;
         margin-left: 15%;
+        margin-top: 10px;
     }
     .li3{
         float: right;
         margin-right: 15%;
+        margin-top: 10px;
     }
     .tech{
         font-size: 12pt;
@@ -538,11 +555,13 @@ input[type=text]{
     font-size: 12pt;
     }
     .footright{
-        margin-top: 13px;
-        margin-right: 10px;
+        margin-right: 0px;
     }
     .footleft{
         margin-left: 10px;
+    }
+    .medsos{
+        margin-right: 10px;
     }
 }
 @media only screen and (max-width: 425px)
@@ -647,8 +666,7 @@ input[type=text]{
         font-size: 16px;
     }
     .footright{
-        margin-top: 11px;
-        margin-right: 10px;
+        margin-right: 0px;
     }
     .footleft{
         margin-left: 10px;

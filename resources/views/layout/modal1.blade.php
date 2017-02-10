@@ -8,16 +8,17 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <h2>Join Our Squad</h2>
+      <button type="button" class="close">&times;</button>
+      <h3>Join Our Squad</h3>
     </div>
     <div class="modal-body">
       <div class="divform">
         <form action="{{ url('joinmail')}}" method="POST"> 
-         <label for="email" style="margin-left: 5%"> Email</label>&nbsp;&nbsp;&nbsp;
+         <label for="email" class="straight"> Email</label>&nbsp;&nbsp;&nbsp;
         <br>
           <input type="email" id="fEmail" name="email" placeholder="Email" value="{{old('email')}}">
           <br>
-          <label for="bidang" style="margin-left:5%">Bidang</label>
+          <label for="bidang" class="straight">Bidang</label>
           <br>
           <select id="fbidang" name="bidang">
           <option value="{{old('bidang')}}">{{old('bidang')}}</option>
@@ -39,17 +40,11 @@
            
           </select>
           <br>
-          <label for="file" style="margin-left: 5%">Upload</label>
+          <label for="file" class="straight">Upload</label>
           <input type="file" name="upload" id="file" value="{{old('upload')}}" />
           <div class="setsummer">
-            <div class="row">
-              <div class="container">
-                <div class="col-lg-12">
-                  <label>cover letter </label>
-                  <textarea name="letter" id="letter"  rows="10" class="form-control">{{old('letter')}}</textarea>
-                </div>
-              </div>
-            </div>
+              <label>cover letter </label>
+              <textarea name="letter" id="letter"  rows="10" class="form-control">{{old('letter')}}</textarea>
           </div>
         </div>
       </div>
@@ -75,15 +70,16 @@
   <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
-        <h2>Request Our Demo</h2>
+        <button type="button" class="close">&times;</button>
+        <h3>Request Our Demo</h3>
       </div>
       <div class="modal-body">
         <div class="divform">
           <form action="{{ url('sendmail') }}" method="POST">
-            <label for="email">Email</label>
+            <label for="email" class="straight">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" value="{{old('email')}}">
             <br>
-            <label for="Bisnis">Bisnis</label>
+            <label for="Bisnis" class="straight">Bisnis</label>
             <select id="Bisnis" name="bisnis">
               <option value="{{old('bisnis')}}">{{old('bisnis')}}</option>
               <option value="hotel">Hotel</option>
@@ -95,15 +91,9 @@
             </select>
             <br>
             <div class="setsummer">
-              <div class="row">
-                <div class="container">
-                  <div class="col-lg-12">
-                    <label for="Overview1">Overview</label>
+                <label for="Overview1">Overview</label>
                     <br>
-                    <textarea id="Overview1" name="overview"></textarea>
-                  </div>
-                </div>
-              </div>
+                <textarea id="Overview1" name="overview"></textarea>
             </div>
           </div>
         </div>
@@ -132,15 +122,16 @@
   <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
-        <h2>Propose A Service</h2>
+        <button type="button" class="close">&times;</button>
+        <h3>Propose A Service</h3>
       </div>
     <div class="modal-body">
       <div class="divform">
         <form action="{{url('proposemail')}}" method="POST">
-          <label for="Email">Email</label>
+          <label for="Email" class="straight">Email</label>
           <input type="email" id="Email" name="email" placeholder="Email">
           <br>
-          <label for="Bisnis">Bisnis</label>
+          <label for="Bisnis" class="straight">Bisnis</label>
           <select id="Bisnis" name="bisnis">
             <option value="hotel">Hotel</option>
             <option value="sekolah">Sekolah</option>
@@ -151,15 +142,9 @@
           </select>
           <br>
           <div class="setsummer">
-            <div class="row">
-              <div class="container">
-                <div class="col-lg-12">
-                  <label for="Overview2">Overview</label>
+                <label for="Overview2">Overview</label>
                   <br>
-                  <textarea id="Overview2" name="overview"></textarea>
-                </div>
-              </div>
-            </div>
+                <textarea id="Overview2" name="overview"></textarea>
           </div>
           <script>
           

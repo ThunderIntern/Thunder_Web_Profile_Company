@@ -6,11 +6,15 @@ var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var close = document.getElementsByClassName("closebtn")[1];
-
+var span = document.getElementsByClassName("close")[1];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
     navbar.style.display="none";
+}
+span.onclick=function(){
+	modal.style.display = "none";
+    navbar.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -35,11 +39,16 @@ var btn1 = document.getElementById("Btn1");
 
 // Get the <span> element that closes the modal
 var close = document.getElementsByClassName("closebtn")[0];
+var span =document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
     modal1.style.display = "block";
     navbar.style.display="none";
+}
+span.onclick=function(){
+	modal1.style.display = "none";
+    navbar.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -55,11 +64,16 @@ var btn3 = document.getElementById("Btn3");
 
 // Get the <span> element that closes the modal
 var close = document.getElementsByClassName("closebtn")[2];
+var span = document.getElementsByClassName("close")[2];
 
 // When the user clicks on the button, open the modal
 btn3.onclick = function() {
     modal3.style.display = "block";
     navbar.style.display="none";
+}
+span.onclick=function(){
+	modal3.style.display = "none";
+    navbar.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -103,17 +117,35 @@ function playclip7() {
 $(document).ready(function() {
           });
           $('#letter').summernote({
-             height:300
+             maxHeight:300,
+             minHeight:90,
+             placeholder: 'write here...',
+             toolbar:[
+             ['style',['bold','underline']],
+             ['insert',['link']]
+             ]
           });
 $(document).ready(function() {
           var markupStr = $('.summernote').eq(1).summernote('code');
           });
           $('#Overview1').summernote({
-              height:300
+              minHeight:90,
+              maxHeight:300,
+              placeholder: 'write here...',
+              toolbar:[
+             ['style',['bold','underline']],
+             ['insert',['link']]
+             ]
           });
 $(document).ready(function() {
           });
           $('#Overview2').summernote({
-             height:300
+             maxHeight:300,
+             minHeight:90,
+             placeholder: 'write here...',
+             toolbar:[
+             ['style',['bold','underline']],
+             ['insert',['link']]
+             ]
           });
 //# sourceMappingURL=all.js.map

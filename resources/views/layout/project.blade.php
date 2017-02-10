@@ -143,12 +143,16 @@
 </section>
 <footer class="footer">
 <hr>
-<div class="footleft">
+<span class="footleft">
   &copy;2017 Thunderlab.id
-</div>
-<div class="footright">
-  Stay Update<a href="http://www.facebook.com" target="_blank"><span class="sprite iefb"></span></a><a href="http://www.twitter.com" target="_blank"><span class="sprite ieTwi"></span> </a>
-</div>
+</span>
+<span class="medsos">
+<a href="http://www.twitter.com" target="_blank"><span class="sprite ieTwi"></span> </a><a href="http://www.facebook.com" target="_blank"><span class="sprite iefb"></span></a>
+</span>
+<span class="footright">
+  Stay Update
+</span>
+
 </footer> 
 </body>
 </html>

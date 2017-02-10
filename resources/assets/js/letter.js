@@ -1,5 +1,11 @@
 $(document).ready(function() {
           });
           $('#letter').summernote({
-             height:300
+             maxHeight:300,
+             minHeight:90,
+             placeholder: 'write here...',
+             toolbar:[
+             ['style',['bold','underline']],
+             ['insert',['link']]
+             ]
           });
