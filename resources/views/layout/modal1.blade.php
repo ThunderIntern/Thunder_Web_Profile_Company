@@ -69,7 +69,8 @@
 @endsection
 
 @section('modal2')
-<button id="myBtn" class="button" >Request A Demo</button>
+<span class="kolom-xs-12">
+<button id="myBtn" class="button" >Request A Demo</button></span>
   <div id="myModal" class="modal">
   <!-- Modal content -->
     <div class="modal-content">
@@ -125,7 +126,8 @@
 @endsection
 
 @section('modal3')
-<button id="Btn3" class="button">Propose A Service</button>
+<span class="kolom-xs-12">
+<button id="Btn3" class="button">Propose A Service</button></span>
   <div id="Modal3" class="modal">
   <!-- Modal content -->
     <div class="modal-content">

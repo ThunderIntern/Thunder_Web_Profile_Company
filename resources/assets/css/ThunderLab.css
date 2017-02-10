@@ -5,7 +5,7 @@
     float: left;
 }
 #section3{
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .img-responsive{
     width: 100%;
@@ -51,12 +51,18 @@
         height: 21px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: 0 -111px; /* Icon background position in sprite */
+        cursor: pointer;
     }
 .ieTwi {
         width: 21px; /* Icon width */
         height: 20px; /* Icon height */
         display: inline-block; /* Display icon as inline block */
         background-position: -14px -114px; /* Icon background position in sprite */
+        cursor: pointer;
+    }
+.kolom-xs-12{
+        width:50%;
+        text-align: right;
     }
 .button{
 	background-color: #fff;
@@ -74,8 +80,14 @@
 	color: white;
 	background-color: #000;
 }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: #fff;
+}
 .content{
     margin-top: 100px;
+}
+.navbar-default .navbar-toggle{
+    border-color: #fff;
 }
 .tech{
     font-size: 16pt;
@@ -118,6 +130,7 @@ html,body{
 }
 #isi1{
     margin-bottom: 100px;
+    padding-top: 60px;
 }
 #isi2{
     margin-bottom: 30px;
@@ -146,10 +159,16 @@ html,body{
     margin-top: 20px;
 }
 #section1{
-    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     width: auto;
     height: auto;
+}
+#section2{
+    margin-top: -80px;
+}
+#helper{
+    padding-top: 50px;
 }
 .row{
     margin-bottom: 30px;
@@ -378,7 +397,7 @@ input[type=text]{
 @media only screen and (min-width: 1500px)
 {
     .nav{
-        margin: -15px 0% -15px 43%;
+        margin: -15px 0% -15px 40%;
     }
     #isi{
         margin-top: 50px;
@@ -396,7 +415,7 @@ input[type=text]{
 @media only screen and (min-width: 1150px) and (max-width: 1500px)
 {
     .nav{
-        margin: -15px 0% -15px 36%;
+        margin: -15px 0% -15px 34%;
     }
    #isi1{
         margin-top: 0px;
@@ -416,9 +435,6 @@ input[type=text]{
     }
     .menu{
         font-size: 10pt;
-    }
-    #section2{
-        margin-top: -30px;
     }
     .title{
         font-size: 19px;
@@ -456,7 +472,6 @@ input[type=text]{
 {
     nav{
         padding:0px;
-        padding-bottom: 10px;
     }
     .nav{
         width: 100%;
@@ -496,10 +511,10 @@ input[type=text]{
         margin-right: 15%;
     }
     .tech{
-        font-size: 14pt;
+        font-size: 12pt;
     }
     #section3{
-        margin-top: 0px;
+        margin-top: -50px;
     }
     #sect3{
         margin: 3% 0% 10%;
@@ -515,9 +530,7 @@ input[type=text]{
         margin bottom: 5px;
         font-size: 24px;
     }
-    #section1{
-        margin-top: 60px;
-    }
+
    .ieTicon {
         margin:0 10px;
     }
@@ -538,11 +551,17 @@ input[type=text]{
         margin-left: 0%;
         margin-right: 0%;
     }
-    .button{
-        font-size: 12px;
+    .kolom-xs-12{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
     }
     .sprite {
    background: url("/image/sprite.png") no-repeat;
+    }
+    .button{
+        padding: 2% 3%;
     }
 .ieminilogo{
     width: 46px;
@@ -620,9 +639,6 @@ input[type=text]{
     }
     .ieTicon {
         margin:0 10px;
-    }
-    .footer{
-        font-size: 8pt;
     }
     #header-success{
     font-size:10pt;

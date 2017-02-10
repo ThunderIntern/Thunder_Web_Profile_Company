@@ -73,10 +73,10 @@
 </section>
 
 <section id="section3" class="content-section text-center">
-    <div class="container-fluid">
+    <div id="helper" class="container-fluid">
         <h1 class="title"><span class="sprite ieTicon"></span> YOUR TIME TOO PRECIOUS <span class="sprite ieTicon"></span></h1>
         <p id="sect3" class="tech col-sm-8 col-xs-12">
-        We are focusing in helping small business to run like a big cooperate,so that they can focus on their growth.We are archieving that by offering tech solution with many service like accounting tech solution,data analysis solution,HR tech solution,costumer relation management,management tech solution, and much more.
+        We are focusing in helping small business to run like a big cooperate, so that they can focus on their growth.We are archieving that by offering tech solution with many service like accounting tech solution, data analysis solution, HR tech solution, costumer relation management, management tech solution, and much more.
         </p>
       </div>
   <div class="row">
@@ -138,9 +138,8 @@
 <section>
    <div class="row">
     <div class="text-center ">
-   @yield('modal2')
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@yield('modal3')
-</div><a href="#section1"><span class="sprite ieGoto" ></span></a></div>
+   @yield('modal2')@yield('modal3')
+</div><a href="#section1"><span class="sprite ieGoto hidden-xs" ></span></a></div>
 </section>
 <footer class="footer">
 <hr>
@@ -148,7 +147,7 @@
   &copy;2017 Thunderlab.id
 </div>
 <div class="footright">
-  Stay Update<span class="sprite iefb"><a href="http://www.facebook.com" target="_blank"></a></span><span class="sprite ieTwi"><a href="http://www.twitter.com" target="_blank"></a></span>
+  Stay Update<a href="http://www.facebook.com" target="_blank"><span class="sprite iefb"></span></a><a href="http://www.twitter.com" target="_blank"><span class="sprite ieTwi"></span> </a>
 </div>
 </footer> 
 </body>
